@@ -42,8 +42,15 @@ Open `http://localhost:8080`.
    - `CNAME` `www` → `formula38.github.io`
 3. Enable HTTPS in Pages settings after DNS propagates
 
+## Career exploration
+
+Internal strategy notes for scaling / pivoting the brand live in
+[`docs/career-pivot-playbook.md`](docs/career-pivot-playbook.md)
+(editorial · commercial · fit modeling, plus host / ambassador / experience lanes).
+
 ## Next upgrades
 
 - Swap `mailto` booking for Formspree / Basin / Netlify Forms
 - Replace IG CDN assets with higher-res originals when available
 - Optional: comp card PDF; more Kitchen imagery
+- Split Book inquiry types once a primary lane is chosen (see playbook)
