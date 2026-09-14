@@ -8,7 +8,8 @@ Static GitHub Pages portfolio for **Ashliee Moore** — model · chef · promote
 
 - Plain HTML / CSS / JS (no framework)
 - Google Fonts: Instrument Serif + Sora
-- Public Instagram imagery from [@ashliee007](https://www.instagram.com/ashliee007/)
+- Public Instagram: [@ashliee007](https://www.instagram.com/ashliee007/)
+- **Content bucket (working):** [Google Photos — Ashliee model pics / vids](https://photos.app.goo.gl/fNxPTAkHm9RpxauBA) (Sep 9–14). Pull selected stills into `assets/` — do not hotlink; Google URLs are not stable. Do not scrape extra social media into the repo.
 
 ## Sections
 
@@ -52,5 +53,5 @@ When the name is registered:
 
 ## Next upgrades
 
-- Replace IG CDN assets with higher-res originals when available
-- Optional: comp card PDF; more Kitchen imagery
+- Select stills from the Google Photos content bucket into `assets/` ([TRI-211](https://linear.app/triple-8-media-group/issue/TRI-211))
+- Optional: comp card PDF; more Kitchen imagery ([TRI-210](https://linear.app/triple-8-media-group/issue/TRI-210))
