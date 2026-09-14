@@ -90,13 +90,23 @@
           body: data,
         });
         const result = await response.json().catch(() => ({}));
+        const messageText = String(result.message || "");
+        const needsActivation = /activ/i.test(messageText);
         const ok =
           response.ok &&
           result.success !== false &&
           result.success !== "false";
 
+        if (needsActivation) {
+          setStatus(
+            "Almost there — check the booking inbox for a FormSubmit activation link, then send again.",
+            "err"
+          );
+          return;
+        }
+
         if (!ok) {
-          throw new Error(result.message || "Send failed");
+          throw new Error(messageText || "Send failed");
         }
 
         form.reset();
