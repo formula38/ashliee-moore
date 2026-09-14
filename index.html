@@ -21,7 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css?v=20260914" />
+    <link rel="stylesheet" href="css/styles.css?v=20260914d" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -268,15 +268,26 @@
               <span>Name</span>
               <input type="text" name="name" autocomplete="name" required />
             </label>
-            <label>
-              <span>Email</span>
-              <input
-                type="email"
-                name="email"
-                autocomplete="email"
-                required
-              />
-            </label>
+            <div class="book__pair">
+              <label>
+                <span>Email</span>
+                <input
+                  type="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                />
+              </label>
+              <label>
+                <span>Phone <span class="book__optional">optional</span></span>
+                <input
+                  type="tel"
+                  name="phone"
+                  autocomplete="tel"
+                  placeholder="(555) 555-5555"
+                />
+              </label>
+            </div>
             <label>
               <span>Inquiry type</span>
               <select name="inquiry" required>
@@ -286,13 +297,58 @@
                 <option value="Event promotion">Event promotion</option>
               </select>
             </label>
+            <div class="book__pair">
+              <label>
+                <span>Date</span>
+                <input
+                  type="text"
+                  name="date"
+                  autocomplete="off"
+                  required
+                  placeholder="e.g. Oct 18, 2026"
+                />
+              </label>
+              <label>
+                <span>Location</span>
+                <input
+                  type="text"
+                  name="location"
+                  autocomplete="off"
+                  required
+                  placeholder="City, venue, or TBD"
+                />
+              </label>
+            </div>
+            <div class="book__pair">
+              <label>
+                <span>Social <span class="book__optional">optional</span></span>
+                <select name="social_platform">
+                  <option value="" selected>Select one</option>
+                  <option value="Instagram">Instagram</option>
+                  <option value="TikTok">TikTok</option>
+                  <option value="Facebook">Facebook</option>
+                  <option value="YouTube">YouTube</option>
+                  <option value="Other">Other</option>
+                </select>
+              </label>
+              <label>
+                <span>Social link <span class="book__optional">optional</span></span>
+                <input
+                  type="text"
+                  name="social"
+                  inputmode="url"
+                  autocomplete="url"
+                  placeholder="https:// or @handle"
+                />
+              </label>
+            </div>
             <label class="book__message">
               <span>Message</span>
               <textarea
                 name="message"
                 rows="5"
                 required
-                placeholder="Date, location, and what you’re looking for…"
+                placeholder="What you’re looking for…"
               ></textarea>
             </label>
             <button class="btn btn--primary" type="submit">Send inquiry</button>
@@ -320,6 +376,6 @@
       <p class="site-footer__copy">© <span data-year></span> Ashliee Moore</p>
     </footer>
 
-    <script src="js/main.js?v=20260914c" defer></script>
+    <script src="js/main.js?v=20260914d" defer></script>
   </body>
 </html>

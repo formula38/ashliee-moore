@@ -456,6 +456,19 @@ h2 {
   gap: 1rem;
 }
 
+.book__pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.book__form .book__optional {
+  letter-spacing: 0.06em;
+  text-transform: none;
+  color: var(--ivory-muted);
+  font-weight: 300;
+}
+
 .book__form .hp {
   display: none;
 }
@@ -585,6 +598,10 @@ h2 {
   .kitchen,
   .about,
   .book {
+    grid-template-columns: 1fr;
+  }
+
+  .book__pair {
     grid-template-columns: 1fr;
   }
 

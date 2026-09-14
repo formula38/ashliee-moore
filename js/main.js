@@ -73,10 +73,15 @@
 
       const name = String(data.get("name") || "").trim();
       const email = String(data.get("email") || "").trim();
+      const phone = String(data.get("phone") || "").trim();
       const inquiry = String(data.get("inquiry") || "").trim();
+      const date = String(data.get("date") || "").trim();
+      const location = String(data.get("location") || "").trim();
+      const socialPlatform = String(data.get("social_platform") || "").trim();
+      const social = String(data.get("social") || "").trim();
       const message = String(data.get("message") || "").trim();
 
-      if (!name || !email || !inquiry || !message) return;
+      if (!name || !email || !inquiry || !date || !location || !message) return;
 
       data.set("_subject", `Booking inquiry — ${inquiry}`);
 
@@ -114,7 +119,20 @@
       } catch {
         const subject = encodeURIComponent(`Booking inquiry — ${inquiry}`);
         const body = encodeURIComponent(
-          `Name: ${name}\nEmail: ${email}\nInquiry: ${inquiry}\n\n${message}`
+          [
+            `Name: ${name}`,
+            `Email: ${email}`,
+            phone && `Phone: ${phone}`,
+            `Inquiry: ${inquiry}`,
+            `Date: ${date}`,
+            `Location: ${location}`,
+            (socialPlatform || social) &&
+              `Social: ${[socialPlatform, social].filter(Boolean).join(" — ")}`,
+            "",
+            message,
+          ]
+            .filter((line) => line !== false)
+            .join("\n")
         );
         setStatus(
           "Could not send through the form. Opening your email client instead.",

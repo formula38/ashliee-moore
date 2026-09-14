@@ -17,7 +17,7 @@ Static GitHub Pages portfolio for **Ashliee Moore** — model · chef · promote
 3. **The Kitchen** — culinary hosting / dining experiences
 4. **The Scene** — events / promotion / brand presence
 5. **About** — bio + Instagram
-6. **Book** — Modeling / Culinary / Event promotion form (FormSubmit → `royaltymaxwin@gmail.com` until `hello@ashliee-moore.com` exists)
+6. **Book** — Modeling / Culinary / Event promotion form (name, email, optional phone, date, location, optional social, message)
 
 ## Local preview
 
