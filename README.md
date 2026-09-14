@@ -17,7 +17,7 @@ Static GitHub Pages portfolio for **Ashliee Moore** — model · chef · promote
 3. **The Kitchen** — culinary hosting / dining experiences
 4. **The Scene** — events / promotion / brand presence
 5. **About** — bio + Instagram
-6. **Book** — Modeling / Culinary / Event promotion form (FormSubmit → `hello@ashliee-moore.com`)
+6. **Book** — Modeling / Culinary / Event promotion form (FormSubmit → `royaltymaxwin@gmail.com` until `hello@ashliee-moore.com` exists)
 
 ## Local preview
 
@@ -36,7 +36,7 @@ Open `http://localhost:8080`.
 
 ## Booking form
 
-Posts through [FormSubmit](https://formsubmit.co) to the public mailbox (GitHub Pages cannot run Netlify Forms; Formspree/Basin need a dashboard form ID). The first live submit sends an activation email to that mailbox — confirm it or later inquiries will not arrive.
+Posts through [FormSubmit](https://formsubmit.co) to `royaltymaxwin@gmail.com` until `hello@ashliee-moore.com` can be created on the branded domain. The first live submit to a new mailbox sends an activation email — confirm it or later inquiries will not arrive.
 
 ## Custom domain (later)
 

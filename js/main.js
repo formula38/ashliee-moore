@@ -58,7 +58,7 @@
   if (form) {
     const status = form.querySelector("[data-form-status]");
     const submit = form.querySelector('button[type="submit"]');
-    const mailbox = "hello@ashliee-moore.com";
+    const mailbox = "royaltymaxwin@gmail.com";
 
     const setStatus = (text, state) => {
       if (!status) return;
