@@ -456,6 +456,10 @@ h2 {
   gap: 1rem;
 }
 
+.book__form .hp {
+  display: none;
+}
+
 .book__form label {
   display: grid;
   gap: 0.45rem;
@@ -489,6 +493,26 @@ h2 {
 .book__form textarea {
   resize: vertical;
   min-height: 8rem;
+}
+
+.book__status {
+  min-height: 1.35em;
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ivory-muted);
+}
+
+.book__status[data-state="ok"] {
+  color: var(--champagne);
+}
+
+.book__status[data-state="err"] {
+  color: var(--rose-bright);
+}
+
+.book__form button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
 }
 
 .book__note {

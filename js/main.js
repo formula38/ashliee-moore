@@ -56,8 +56,21 @@
   }
 
   if (form) {
-    form.addEventListener("submit", (event) => {
+    const status = form.querySelector("[data-form-status]");
+    const submit = form.querySelector('button[type="submit"]');
+    const mailbox = "hello@ashliee-moore.com";
+
+    const setStatus = (text, state) => {
+      if (!status) return;
+      status.textContent = text;
+      status.dataset.state = state || "";
+    };
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
       const data = new FormData(form);
+      if (String(data.get("_gotcha") || "").trim()) return;
+
       const name = String(data.get("name") || "").trim();
       const email = String(data.get("email") || "").trim();
       const inquiry = String(data.get("inquiry") || "").trim();
@@ -65,12 +78,42 @@
 
       if (!name || !email || !inquiry || !message) return;
 
-      event.preventDefault();
-      const subject = encodeURIComponent(`Booking inquiry — ${inquiry}`);
-      const body = encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\nInquiry: ${inquiry}\n\n${message}`
-      );
-      window.location.href = `mailto:hello@ashliee-moore.com?subject=${subject}&body=${body}`;
+      data.set("_subject", `Booking inquiry — ${inquiry}`);
+
+      if (submit) submit.disabled = true;
+      setStatus("Sending…", "pending");
+
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          headers: { Accept: "application/json" },
+          body: data,
+        });
+        const result = await response.json().catch(() => ({}));
+        const ok =
+          response.ok &&
+          result.success !== false &&
+          result.success !== "false";
+
+        if (!ok) {
+          throw new Error(result.message || "Send failed");
+        }
+
+        form.reset();
+        setStatus("Inquiry sent. Ashliee will get back to you.", "ok");
+      } catch {
+        const subject = encodeURIComponent(`Booking inquiry — ${inquiry}`);
+        const body = encodeURIComponent(
+          `Name: ${name}\nEmail: ${email}\nInquiry: ${inquiry}\n\n${message}`
+        );
+        setStatus(
+          "Could not send through the form. Opening your email client instead.",
+          "err"
+        );
+        window.location.href = `mailto:${mailbox}?subject=${subject}&body=${body}`;
+      } finally {
+        if (submit) submit.disabled = false;
+      }
     });
   }
 })();

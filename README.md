@@ -17,7 +17,7 @@ Static GitHub Pages portfolio for **Ashliee Moore** — model · chef · promote
 3. **The Kitchen** — culinary hosting / dining experiences
 4. **The Scene** — events / promotion / brand presence
 5. **About** — bio + Instagram
-6. **Book** — Modeling / Culinary / Event promotion form (`mailto:hello@ashliee-moore.com`)
+6. **Book** — Modeling / Culinary / Event promotion form (FormSubmit → `hello@ashliee-moore.com`)
 
 ## Local preview
 
@@ -34,16 +34,23 @@ Open `http://localhost:8080`.
 2. Branch: `main` · folder: `/ (root)`
 3. Save — site publishes at `https://formula38.github.io/ashliee-moore/`
 
+## Booking form
+
+Posts through [FormSubmit](https://formsubmit.co) to the public mailbox (GitHub Pages cannot run Netlify Forms; Formspree/Basin need a dashboard form ID). The first live submit sends an activation email to that mailbox — confirm it or later inquiries will not arrive.
+
 ## Custom domain (later)
 
+`ashliee-moore.com` is not registered yet (NXDOMAIN as of 2026-09-14). Do **not** add a `CNAME` file or set Pages `cname` until the domain exists and DNS points here — GitHub would redirect the live github.io URL to a dead host.
+
+When the name is registered:
+
 1. Copy `CNAME.example` → `CNAME` with contents `ashliee-moore.com`
-2. At GoDaddy, point DNS:
+2. At the registrar, point DNS:
    - `A` records to GitHub Pages IPs, or
    - `CNAME` `www` → `formula38.github.io`
 3. Enable HTTPS in Pages settings after DNS propagates
 
 ## Next upgrades
 
-- Swap `mailto` booking for Formspree / Basin / Netlify Forms
 - Replace IG CDN assets with higher-res originals when available
 - Optional: comp card PDF; more Kitchen imagery

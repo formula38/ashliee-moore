@@ -249,11 +249,14 @@
           </div>
           <form
             class="book__form"
-            action="mailto:hello@ashliee-moore.com"
-            method="post"
-            enctype="text/plain"
+            action="https://formsubmit.co/ajax/hello@ashliee-moore.com"
+            method="POST"
             data-booking-form
           >
+            <input type="hidden" name="_subject" value="Booking inquiry" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
             <label>
               <span>Name</span>
               <input type="text" name="name" autocomplete="name" required />
@@ -286,10 +289,10 @@
               ></textarea>
             </label>
             <button class="btn btn--primary" type="submit">Send inquiry</button>
+            <p class="book__status" data-form-status role="status" aria-live="polite"></p>
             <p class="book__note">
-              Opens your email client to
+              Sent to
               <a href="mailto:hello@ashliee-moore.com">hello@ashliee-moore.com</a>.
-              Formspree or similar can replace this later.
             </p>
           </form>
         </div>
