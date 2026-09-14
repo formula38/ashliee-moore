@@ -21,7 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=20260914" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -256,7 +256,14 @@
             <input type="hidden" name="_subject" value="Booking inquiry" />
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_captcha" value="false" />
-            <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+            <input
+              class="hp visually-hidden"
+              type="text"
+              name="_gotcha"
+              tabindex="-1"
+              autocomplete="off"
+              hidden
+            />
             <label>
               <span>Name</span>
               <input type="text" name="name" autocomplete="name" required />
@@ -313,6 +320,6 @@
       <p class="site-footer__copy">© <span data-year></span> Ashliee Moore</p>
     </footer>
 
-    <script src="js/main.js" defer></script>
+    <script src="js/main.js?v=20260914" defer></script>
   </body>
 </html>
