@@ -211,9 +211,9 @@ textarea {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: center 14%;
   opacity: 0;
-  transform: scale(1.08);
+  transform: scale(1.03);
   transition: opacity 1.4s var(--ease);
 }
 
@@ -222,12 +222,13 @@ textarea {
   animation: hero-drift 28s var(--ease) infinite alternate;
 }
 
-.hero__image:nth-child(2) {
-  object-position: center 30%;
+.hero {
+  cursor: zoom-in;
 }
 
-.hero__image:nth-child(3) {
-  object-position: center 22%;
+.hero a,
+.hero button {
+  cursor: pointer;
 }
 
 .hero__veil {
@@ -257,6 +258,11 @@ textarea {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   transform: rotate(-2.5deg);
+  transition: opacity 0.55s var(--ease);
+}
+
+.hero__look.is-swapping {
+  opacity: 0;
 }
 
 .hero__roles {
@@ -434,13 +440,25 @@ h2 {
 .polaroid img,
 .marquee img,
 .kitchen__media img,
+.tasting img,
 .about__media img {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: center 18%;
+}
+
+.kitchen__media img,
+.tasting img {
+  object-position: center center;
+}
+
+main img {
+  cursor: zoom-in;
 }
 
 .film__card figcaption,
+.tasting figcaption,
 .marquee figcaption {
   display: flex;
   align-items: baseline;
@@ -452,12 +470,23 @@ h2 {
   color: var(--champagne);
 }
 
-.film__card figcaption span {
+.film__card figcaption span,
+.tasting figcaption span {
   font-family: var(--font-display);
   font-size: 1.05rem;
   letter-spacing: 0;
   font-style: italic;
   color: var(--rose-bright);
+}
+
+[data-looks] img,
+[data-looks] figcaption {
+  transition: opacity 0.7s var(--ease);
+}
+
+[data-looks] img.is-swapping,
+[data-looks] figcaption.is-swapping {
+  opacity: 0;
 }
 
 .film__nav {
@@ -592,6 +621,98 @@ h2 {
   height: 35%;
   background: radial-gradient(circle, rgba(184, 58, 75, 0.35), transparent 70%);
   z-index: -1;
+}
+
+.tasting {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr 1fr;
+  gap: 1rem;
+  margin-top: clamp(2.25rem, 5vw, 3.5rem);
+}
+
+.tasting figure {
+  margin: 0;
+}
+
+.tasting__hero {
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.tasting__hero img {
+  flex: 1 1 auto;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+
+.zoom {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 1.5rem;
+  border: 0;
+  background: transparent;
+  color: var(--ivory);
+}
+
+.zoom::backdrop {
+  background: rgba(12, 9, 8, 0.88);
+  backdrop-filter: blur(8px);
+}
+
+.zoom[open] {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  animation: zoom-in 0.28s var(--ease);
+}
+
+.zoom__image {
+  max-width: min(96vw, 1400px);
+  max-height: min(88vh, 1800px);
+  width: auto;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center center;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.zoom__caption {
+  margin: 0.85rem 0 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--champagne);
+  text-align: center;
+}
+
+.zoom__close {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: rgba(12, 9, 8, 0.72);
+  color: var(--ivory);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+}
+
+.zoom__close:hover,
+.zoom__close:focus-visible {
+  border-color: var(--champagne);
+  color: var(--champagne);
 }
 
 .about {
@@ -759,10 +880,10 @@ h2 {
 
 @keyframes hero-drift {
   from {
-    transform: scale(1.08) translate3d(0, 0, 0);
+    transform: scale(1.03) translate3d(0, 0, 0);
   }
   to {
-    transform: scale(1.14) translate3d(-1.5%, -1.2%, 0);
+    transform: scale(1.06) translate3d(-0.8%, -0.5%, 0);
   }
 }
 
@@ -784,6 +905,17 @@ h2 {
   }
 }
 
+@keyframes zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @media (max-width: 900px) {
   .polaroids {
     grid-template-columns: 1fr 1fr;
@@ -797,6 +929,19 @@ h2 {
   .about,
   .book {
     grid-template-columns: 1fr;
+  }
+
+  .tasting {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tasting__hero {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  .tasting__hero img {
+    aspect-ratio: 4 / 5;
   }
 
   .book__pair {
@@ -866,6 +1011,10 @@ h2 {
     transform: rotate(calc(var(--tilt, 0deg) * 0.4));
   }
 
+  .tasting {
+    grid-template-columns: 1fr;
+  }
+
   .marquee figure {
     flex-basis: min(78vw, 240px);
   }
@@ -881,9 +1030,13 @@ h2 {
   }
 
   .hero__image,
+  .hero__look,
   .press-ticker span,
   .marquee__track,
-  [data-reveal] {
+  .zoom[open],
+  [data-reveal],
+  [data-looks] img,
+  [data-looks] figcaption {
     animation: none !important;
     transition: none !important;
     opacity: 1;
