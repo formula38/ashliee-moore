@@ -1,93 +1,423 @@
 {
-  "_skip": [
-    "culinary/004.jpg",
-    "culinary/005.jpg",
-    "culinary/010.jpg",
-    "fashion/020.jpg",
-    "culinary/008.jpg"
-  ],
-  "culinary/000.jpg": {
-    "caption": "Rosemary salmon",
-    "alt": "Seasoned salmon fillets with rosemary, peppers, onion, and lemon in a glass baking dish"
+  "fashion/000.jpg": {
+    "caption": "Gilded shores",
+    "alt": "A model kneels on dark sand in a seafoam beaded gown and golden sunburst crown, one hand extended toward the water."
   },
-  "culinary/001.jpg": {
-    "caption": "Lemon sear",
-    "alt": "Seared salmon topped with lemon, glazed carrots, and a creamy side salad"
+  "fashion/001.jpg": {
+    "caption": "Urban stripe",
+    "alt": "A woman in a white and black tie-dye off-shoulder dress poses on a sunny city sidewalk with a skyscraper behind her."
   },
-  "culinary/002.jpg": {
-    "caption": "Pan heat",
-    "alt": "Seasoned beef strips and peppers sizzling in a pan"
+  "fashion/002.jpg": {
+    "caption": "Midnight runway",
+    "alt": "A model in a black feather-trimmed blazer dress walks an outdoor white runway at night toward a seated audience."
   },
-  "culinary/003.jpg": {
-    "caption": "Surf & turf",
-    "alt": "Pan-seared steak tips with seasoned shrimp, corn, green beans, and rice"
+  "fashion/003.jpg": {
+    "caption": "Feathered exit",
+    "alt": "From behind, a model in a black feathered mini dress walks away down a lit outdoor runway at night."
   },
-  "culinary/006.jpg": {
-    "caption": "Seafood linguine",
-    "alt": "Linguine in red sauce with mussels, clams, shrimp, and a whole prawn"
+  "fashion/004.jpg": {
+    "caption": "Denim procession",
+    "alt": "Several models in coordinated denim looks walk a white outdoor runway at night while spectators watch from folding chairs."
   },
-  "culinary/007.jpg": {
-    "caption": "Herb fillet",
-    "alt": "Herb-crusted fish with lemon, sausage-topped mashed potatoes, and broccoli"
+  "fashion/005.jpg": {
+    "caption": "Feathered stride",
+    "alt": "A model in a black satin-lapel blazer and feathered skirt walks a white runway as an audience claps under streetlights."
+  },
+  "fashion/006.jpg": {
+    "caption": "Ink portrait",
+    "alt": "A black-and-white close-up of a woman in a denim jacket with dramatic lashes, groomed brows, and slicked baby hairs."
+  },
+  "fashion/007.jpg": {
+    "caption": "Monochrome statement",
+    "alt": "In black and white, a woman in a dark V-neck top rests a hand on her chest, showing large geometric patterned rings."
+  },
+  "fashion/008.jpg": {
+    "caption": "Leather repose",
+    "alt": "A woman in a black faux-leather shirt-dress sits in a wingback chair beside pampas grass under moody purple-tinted light."
+  },
+  "fashion/009.jpg": {
+    "caption": "Scarlet lens",
+    "alt": "A woman in a red V-neck blazer adjusts thin gold glasses against a deep red studio backdrop, wearing space buns and layered jewelry."
+  },
+  "fashion/010.jpg": {
+    "caption": "Crimson gaze",
+    "alt": "A woman in a plunging red blazer holds silver glasses near her lips, lit by a circular spotlight on a dark red background."
+  },
+  "fashion/011.jpg": {
+    "caption": "Velvet shimmer",
+    "alt": "A beauty close-up shows pink glitter eyeshadow, matte red lips, and gold rings against a grey backdrop and burgundy velvet neckline."
+  },
+  "fashion/012.jpg": {
+    "caption": "Citron bloom",
+    "alt": "On a dim runway, a model wears a neon yellow dress with towering pleated ruffles framing her face and curly updo."
+  },
+  "fashion/013.jpg": {
+    "caption": "Tiered citron",
+    "alt": "A model peeks over massive neon yellow ruffles of a sculptural gown, looking back over her shoulder on a dark runway."
+  },
+  "fashion/014.jpg": {
+    "caption": "Wine velvet",
+    "alt": "A woman in a long-sleeved burgundy velvet dress poses in three-quarter view against a grey studio background."
+  },
+  "fashion/015.jpg": {
+    "caption": "Gilded ruff",
+    "alt": "Outdoors, a woman with gold shimmer makeup and a pleated gold ruff collar over black lace looks downward in soft daylight."
+  },
+  "fashion/016.jpg": {
+    "caption": "Crimson spotlight",
+    "alt": "In a circular spotlight, a woman in a red lace bodysuit holds a grey fedora beside a bright white wall."
+  },
+  "fashion/017.jpg": {
+    "caption": "Magenta hour",
+    "alt": "Low-key light casts a sharp profile shadow of a woman with gold shimmer makeup, long straight hair, and a magenta top."
+  },
+  "fashion/018.jpg": {
+    "caption": "Satin silhouette",
+    "alt": "A woman in a short magenta satin slip and strappy heels leans against a wall striped with window-pane shadows."
+  },
+  "fashion/019.jpg": {
+    "caption": "Velvet halo",
+    "alt": "A woman in a burgundy velvet turtleneck dress with a waist knot stands before a white circular spotlight on a grey background."
+  },
+  "fashion/020.jpg": {
+    "caption": "Riverbank lens",
+    "alt": "Behind the scenes on a sandy riverbank, a photographer shoots a model in a mint gown and spiked gold crown."
+  },
+  "fashion/021.jpg": {
+    "caption": "Shoreline session",
+    "alt": "On an overcast river beach, a crouching photographer frames a seated model in a beaded mint dress and gold crown."
+  },
+  "fashion/022.jpg": {
+    "caption": "Crystal collar walk",
+    "alt": "A model walks a white runway in a cream patterned jacket, striped trousers with lace hems, rhinestone bow collar, and flowing skirt."
+  },
+  "fashion/023.jpg": {
+    "caption": "Mural profile",
+    "alt": "A model in a yellow damask hoodie, brown textured pants, and cream train leans against a bold black-white-and-orange mural."
+  },
+  "fashion/024.jpg": {
+    "caption": "Crystal mural",
+    "alt": "Dramatic red and white eye makeup and a rhinestone pointed collar accent a patterned yellow top before an orange sun mural."
+  },
+  "fashion/025.jpg": {
+    "caption": "Foil gold damask",
+    "alt": "Before crinkled gold foil, a model in a yellow damask jacket and rhinestone collar shields her eyes with one hand."
+  },
+  "fashion/026.jpg": {
+    "caption": "Garden ruff",
+    "alt": "Outdoors, a model in black lace and a metallic gold ruffled collar holds a large bouquet of pink and white chrysanthemums."
+  },
+  "fashion/027.jpg": {
+    "caption": "Golden ruff glow",
+    "alt": "Warm light highlights gold makeup and a large pleated metallic collar in a close portrait with a soft double-exposure haze."
+  },
+  "fashion/028.jpg": {
+    "caption": "Field wings",
+    "alt": "In tall grass at golden hour, a model in a black lace dress extends peach lace wing panels from her arms."
+  },
+  "fashion/029.jpg": {
+    "caption": "River radiance",
+    "alt": "Standing in a shallow river, a model spreads the skirt of a beaded aqua gown while wearing a radiating gold spike crown."
+  },
+  "fashion/030.jpg": {
+    "caption": "Azure twirl",
+    "alt": "In river water, a model twirls a cyan beaded gown outward in a circle, gold sunburst crown catching the light."
+  },
+  "fashion/031.jpg": {
+    "caption": "Salford cover",
+    "alt": "A magazine-style graphic shows a model in a gold ruff collar under the title Salford and summer cover lines."
+  },
+  "fashion/032.jpg": {
+    "caption": "Catalogue spread",
+    "alt": "A designed magazine layout features a model in a rhinestone wing collar with fashion headlines and a barcode."
+  },
+  "fashion/033.jpg": {
+    "caption": "LiBush Africa",
+    "alt": "Three models in bold African-print ensembles pose together in a studio against a grey textured backdrop."
+  },
+  "fashion/034.jpg": {
+    "caption": "Heritage stride",
+    "alt": "On an outdoor red carpet, a model walks in an orange and olive patterned peplum set with a long orange fringe necklace."
+  },
+  "fashion/035.jpg": {
+    "caption": "Engine stride",
+    "alt": "On a reflective runway beside a vintage locomotive, a model wears a black tulle crop top and colorful printed maxi skirt."
+  },
+  "fashion/036.jpg": {
+    "caption": "Tulle and steam",
+    "alt": "A model in a black off-shoulder tulle top and geometric print maxi skirt poses in front of a dark steam engine with red wheels."
+  },
+  "fashion/037.jpg": {
+    "caption": "Dual procession",
+    "alt": "Two models walk a dark runway near a train display, one in a printed skirt and tulle top, the other in a colorful halter mini dress."
+  },
+  "fashion/038.jpg": {
+    "caption": "Plaid power",
+    "alt": "On a bright stage with drum kits behind her, a model in a blue and red plaid mini dress holds a white towel at her shoulders."
+  },
+  "fashion/039.jpg": {
+    "caption": "Tartan breeze",
+    "alt": "A model in a red and blue plaid dress and matching headscarf walks a stage as white fabric billows behind her."
+  },
+  "fashion/040.jpg": {
+    "caption": "Night walk",
+    "alt": "At night against a concrete pillar, a woman in a blue patterned dress and white strappy heels rests one foot on a red rail."
+  },
+  "fashion/041.jpg": {
+    "caption": "Concrete poise",
+    "alt": "Lit by flash at night, a woman in a blue marble-print dress with a high slit leans on a concrete column beside a metal railing."
+  },
+  "fashion/042.jpg": {
+    "caption": "Rhinestone rodeo",
+    "alt": "On a dark stage, a performer in a red rhinestone jumpsuit, red cape, and fringed cowboy hat touches the brim."
+  },
+  "fashion/043.jpg": {
+    "caption": "Scarlet runway",
+    "alt": "A model walks toward the camera in a sheer red rhinestone jumpsuit, red cape, crystal-fringed cowboy hat, and sparkling boots."
+  },
+  "fashion/044.jpg": {
+    "caption": "Crimson cape",
+    "alt": "Mid-stride on a runway, a model in a red embellished jumpsuit adjusts a red cowboy hat with crystal fringe."
+  },
+  "fashion/045.jpg": {
+    "caption": "Emerald garden",
+    "alt": "On a sunny patio, a woman in a ribbed green mini dress and wide green hat looks back over her shoulder with geometric glasses."
+  },
+  "fashion/046.jpg": {
+    "caption": "Baroque volume",
+    "alt": "In a gallery, a woman in an enormous black-and-gold baroque jumpsuit with fur-trimmed sleeves casts a sharp shadow on the wall."
+  },
+  "fashion/047.jpg": {
+    "caption": "Plaid layers",
+    "alt": "Outdoors in sunlight, a woman crosses her ankles in a black-and-white plaid mini dress and oversized yellow-green plaid coat."
+  },
+  "fashion/048.jpg": {
+    "caption": "Ankara peplum",
+    "alt": "A woman in a vibrant African-print peplum top, orange beaded fringe, and spiral curls poses inside a bright boutique."
+  },
+  "fashion/049.jpg": {
+    "caption": "Gallery still",
+    "alt": "A portrait of a model in a yellow floral jacket and rhinestone bow tie before crinkled gold foil appears inside a phone photo viewer."
+  },
+  "fashion/050.jpg": {
+    "caption": "Park statement",
+    "alt": "On grass in daylight, a woman in a black halter jumpsuit and oversized gold jewelry stands with hands on her hips."
   },
   "cosmetology/000.jpg": {
-    "caption": "Denim close",
-    "alt": "Black and white beauty close-up of Ashliee in a denim jacket"
+    "caption": "Denim monochrome",
+    "alt": "A black-and-white close-up of a woman in a denim jacket with long lashes and slicked edges, shown as a phone screenshot."
   },
   "cosmetology/001.jpg": {
-    "caption": "Soft glam",
-    "alt": "Beauty portrait of Ashliee with polished soft glam makeup"
+    "caption": "Pink studio gloss",
+    "alt": "Against a pink backdrop, a woman in a black leather jacket holds her lapels, showing glossy nude lips and a sleek low bun."
   },
   "cosmetology/002.jpg": {
-    "caption": "Lash hour",
-    "alt": "Close-up beauty still highlighting lashes and finish"
+    "caption": "Up close",
+    "alt": "On purple, a woman in a leather jacket and gold chain rests her hand under her chin, highlighting glossy brown lips and dramatic lashes."
   },
   "cosmetology/003.jpg": {
-    "caption": "Full face",
-    "alt": "Beauty portrait of Ashliee with a full glam look"
+    "caption": "Neon peek",
+    "alt": "On a runway, a model looks over her shoulder through neon yellow ruffles, revealing bold eye makeup and a high puff with bangs."
   },
-  "events/000.jpg": {
-    "caption": "Ensemble lead",
-    "alt": "Black and white group editorial with Ashliee centered in denim"
+  "culinary/000.jpg": {
+    "caption": "Rosemary salmon",
+    "alt": "Two seasoned salmon fillets with rosemary sit in a glass dish over sliced peppers, onion, and lemon on a stovetop."
   },
-  "events/001.jpg": {
-    "caption": "Studio duo",
-    "alt": "Ashliee in a tiered fuzzy look posing with a companion in studio"
+  "culinary/001.jpg": {
+    "caption": "The plate",
+    "alt": "A seared salmon fillet topped with a lemon round rests on a white plate beside glazed carrots and a creamy side."
   },
-  "events/002.jpg": {
-    "caption": "Shoot day",
-    "alt": "Behind-the-scenes energy from a location shoot"
+  "culinary/002.jpg": {
+    "caption": "Sizzling strips",
+    "alt": "Motion-blurred beef strips seasoned in a pan toss with green pepper, onion, and carrot slices."
   },
-  "events/003.jpg": {
-    "caption": "Garage tulle",
-    "alt": "Editorial group in denim and orange tulle in a parking garage"
+  "culinary/003.jpg": {
+    "caption": "Surf and turf",
+    "alt": "A white plate holds sautéed shrimp, seared beef tips, yellow corn with green beans, and a mound of white rice."
   },
-  "events/004.jpg": {
-    "caption": "Rooftop call",
-    "alt": "Ashliee on a rooftop or outdoor event set"
+  "culinary/004.jpg": {
+    "caption": "Lily center",
+    "alt": "A macro view into a white lily shows green filaments, orange pollen, and lyric text overlaid in the corner."
   },
-  "events/005.jpg": {
-    "caption": "Brand room",
-    "alt": "Ashliee representing brand presence at an event"
+  "culinary/005.jpg": {
+    "caption": "Morning stack",
+    "alt": "A close-up breakfast sandwich layers avocado, a seasoned fried egg, and grilled meat on a bun with social stickers."
   },
-  "events/006.jpg": {
-    "caption": "After glow",
-    "alt": "Ashliee in an after-hours event look"
+  "culinary/006.jpg": {
+    "caption": "Ocean linguine",
+    "alt": "Linguine in red sauce is topped with a whole langoustine, clams, mussels, and microgreens in a white bowl on a checkered cloth."
   },
-  "fashion/000.jpg": {
-    "caption": "Halo shore",
-    "alt": "Ashliee kneeling on the beach in a seafoam gown with a gold sunburst headpiece"
+  "culinary/007.jpg": {
+    "caption": "Green plate supper",
+    "alt": "A green rectangular plate holds a seasoned fish fillet with lemon, mashed potatoes with sausage, and steamed broccoli."
+  },
+  "culinary/008.jpg": {
+    "caption": "Prep board",
+    "alt": "Tomatoes and a knife on a cutting board sit beside diced peppers in a bowl, with onions and peppers scattered on the counter."
   },
   "culinary/009.jpg": {
-    "caption": "Lemon garlic chicken",
-    "alt": "Spice-rubbed chicken with lemon, garlic, peppers, and green onion in a glass dish"
+    "caption": "Lemon lined chicken",
+    "alt": "Raw chicken pieces in a glass dish are rubbed with spice, garlic, scallions, bell peppers, and a row of lemon slices."
+  },
+  "culinary/010.jpg": {
+    "caption": "Kale rinse",
+    "alt": "Curly kale is washed in a white bowl under running water in a kitchen sink."
   },
   "culinary/011.jpg": {
-    "caption": "Cabbage sauté",
-    "alt": "Sautéed cabbage with onions and bell peppers in a pan"
+    "caption": "Cabbage stir",
+    "alt": "A pot of sautéed green cabbage, red pepper, and onion glistens as a wooden utensil stirs the vegetables."
   },
   "culinary/012.jpg": {
-    "caption": "Grill packets",
-    "alt": "Foil packets of shrimp with lemon and sausage with corn on the grill"
-  }
+    "caption": "Foil feast",
+    "alt": "On a grill, foil packets hold seasoned shrimp with lemon and onion above sausage, corn, and herbs, beside bubbling butter."
+  },
+  "culinary/013.jpg": {
+    "caption": "Grill and citrus",
+    "alt": "Salmon fillets with spice, lemon, onion, and jalapeño cook in foil on a grill grate near a potato-and-onion packet."
+  },
+  "culinary/014.jpg": {
+    "caption": "Boil prep",
+    "alt": "An aluminum tray is filled with raw shrimp, sliced sausage, lemon wedges, peppers, and reddish seasoning ready to cook."
+  },
+  "culinary/015.jpg": {
+    "caption": "Berry bowl blur",
+    "alt": "A blurry counter scene shows a red bowl of mixed berries and kiwi beside a berry-topped drink and a coral flower."
+  },
+  "culinary/016.jpg": {
+    "caption": "Foil fire",
+    "alt": "Lobster tail and fish fillet with peppers and citrus cook on foil, with stylized text overlaid on the image."
+  },
+  "culinary/017.jpg": {
+    "caption": "Lobster and fillet",
+    "alt": "On a blue plate, a spice-crusted fish fillet with lemon sits beside creamy sides, greens, and a whole lobster tail."
+  },
+  "culinary/018.jpg": {
+    "caption": "Blue plate catch",
+    "alt": "Held over a stove, a blue plate presents seared fish with lemon atop orange sides and a bright cooked lobster tail."
+  },
+  "culinary/019.jpg": {
+    "caption": "Good breakfast",
+    "alt": "A motion-blurred shot of bacon packaging, eggs, butter, and green onions on a stovetop carries a bold text overlay."
+  },
+  "culinary/020.jpg": {
+    "caption": "Citrus butter pan",
+    "alt": "A frying pan simmers with okra, onion, lemon and lime wedges, melting butter, and chopped herbs."
+  },
+  "culinary/021.jpg": {
+    "caption": "Shell rinse",
+    "alt": "Snow crab legs and lobster tails rest in colanders inside a stainless sink beside packaged shellfish."
+  },
+  "culinary/022.jpg": {
+    "caption": "Steaming boil",
+    "alt": "Steam rises from a pot of reddish broth filled with crab legs and round sausage slices."
+  },
+  "culinary/023.jpg": {
+    "caption": "Berry prep",
+    "alt": "A bowl of freshly sliced strawberries sits on a counter in front of a bottle of cran-apple juice and white tile."
+  },
+  "culinary/024.jpg": {
+    "caption": "Cheddar crown",
+    "alt": "Shredded orange cheddar covers a creamy yellow base in a glass baking dish before baking."
+  },
+  "culinary/025.jpg": {
+    "caption": "Twin tails",
+    "alt": "Two raw lobster tails lie side by side on a white tray, showing mottled shells and pale meat."
+  },
+  "culinary/026.jpg": {
+    "caption": "Stew drop",
+    "alt": "A hand drops chunks of salmon into a simmering red tomato stew speckled with herbs and aromatics."
+  },
+  "culinary/027.jpg": {
+    "caption": "Wine and crab",
+    "alt": "Snow crab legs bubble in a teal Dutch oven while a blurred glass of red wine fills the foreground."
+  },
+  "culinary/028.jpg": {
+    "caption": "Red bowl feast",
+    "alt": "A patterned red bowl overflows with crab legs, lobster, shrimp, parsley, lemon, and garlic bread on granite."
+  },
+  "culinary/029.jpg": {
+    "caption": "Coconut can",
+    "alt": "A hand holds a Viva Sabor coconut water can above a kitchen counter with a blender base visible."
+  },
+  "culinary/030.jpg": {
+    "caption": "Green blend",
+    "alt": "A hand presses start on a Ninja blender filled with greens atop yellow fruit against a geometric tile backsplash."
+  },
+  "culinary/031.jpg": {
+    "caption": "Market morning",
+    "alt": "Produce, almond milk, eggs, and supplement bottles are arranged on a gray kitchen counter by the stove."
+  },
+  "culinary/032.jpg": {
+    "caption": "Pour over tray",
+    "alt": "A hand tips a pan of lemony broth over a sheet pan piled with crab, shrimp, crawfish, sausage, and green onion."
+  },
+  "culinary/033.jpg": {
+    "caption": "Lobster penne",
+    "alt": "On a black etched plate, lobster tail and penne in golden sauce are garnished with scallions, microgreens, and grilled lemon."
+  },
+  "culinary/034.jpg": {
+    "caption": "Gilded tail",
+    "alt": "A close-up shows a seasoned lobster tail drizzled with cream over pasta, scallions, and microgreens on a dark plate."
+  },
+  "events/000.jpg": {
+    "caption": "Denim ensemble",
+    "alt": "In black and white, a woman in a buttoned denim jacket stands centered among four softly blurred figures behind her."
+  },
+  "events/001.jpg": {
+    "caption": "Fringe moment",
+    "alt": "A woman in a pink-to-cream fringed high-neck piece stands beside a laughing man in a cap and graphic tee before a brown backdrop."
+  },
+  "events/002.jpg": {
+    "caption": "Riverbank set",
+    "alt": "On a sandy river shore, a photographer crouches to shoot a model in a mint gown and gold crown seated by the water."
+  },
+  "events/003.jpg": {
+    "caption": "Garage tableau",
+    "alt": "Five models in denim and orange tulle pose in a parking garage while a crew member arranges fabric on the concrete floor."
+  },
+  "events/004.jpg": {
+    "caption": "Rooftop denim",
+    "alt": "On a wet rooftop lot, a woman in a long denim coat, red gloves, and red thigh boots leans against a gold ladder."
+  },
+  "events/005.jpg": {
+    "caption": "Time capsule",
+    "alt": "A promotional graphic shows five models in blue and orange tulle looks with By Teonie and Time Capsule text overlays."
+  },
+  "events/006.jpg": {
+    "caption": "Peacock walk",
+    "alt": "On an outdoor runway, a model in a green ribbed dress, peacock-feather hat, and gold chains walks past seated guests."
+  },
+  "_skip": [
+    "fashion/001.jpg",
+    "fashion/003.jpg",
+    "fashion/014.jpg",
+    "fashion/018.jpg",
+    "fashion/020.jpg",
+    "fashion/021.jpg",
+    "fashion/027.jpg",
+    "fashion/028.jpg",
+    "fashion/031.jpg",
+    "fashion/032.jpg",
+    "fashion/033.jpg",
+    "fashion/034.jpg",
+    "fashion/038.jpg",
+    "fashion/039.jpg",
+    "fashion/042.jpg",
+    "fashion/043.jpg",
+    "fashion/044.jpg",
+    "fashion/049.jpg",
+    "fashion/050.jpg",
+    "cosmetology/000.jpg",
+    "cosmetology/001.jpg",
+    "cosmetology/002.jpg",
+    "culinary/004.jpg",
+    "culinary/005.jpg",
+    "culinary/008.jpg",
+    "culinary/010.jpg",
+    "culinary/015.jpg",
+    "culinary/016.jpg",
+    "culinary/019.jpg",
+    "culinary/029.jpg",
+    "events/005.jpg"
+  ]
 }
