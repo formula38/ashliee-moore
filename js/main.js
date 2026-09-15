@@ -55,6 +55,78 @@
     revealItems.forEach((item) => item.classList.add("is-visible"));
   }
 
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const heroSlides = document.querySelectorAll("[data-hero-stage] .hero__image");
+  const heroLook = document.querySelector("[data-hero-look]");
+  if (heroSlides.length > 1 && !reduceMotion) {
+    let index = 0;
+    window.setInterval(() => {
+      heroSlides[index].classList.remove("is-active");
+      index = (index + 1) % heroSlides.length;
+      heroSlides[index].classList.add("is-active");
+      if (heroLook) {
+        heroLook.textContent = heroSlides[index].dataset.look || "";
+      }
+    }, 5200);
+  }
+
+  const carousel = document.querySelector("[data-carousel]");
+  if (carousel) {
+    const track = carousel.querySelector("[data-carousel-track]");
+    const prev = carousel.querySelector("[data-carousel-prev]");
+    const next = carousel.querySelector("[data-carousel-next]");
+    const step = () => {
+      const card = track.querySelector(".film__card");
+      return card ? card.getBoundingClientRect().width + 16 : track.clientWidth * 0.8;
+    };
+    const go = (dir) => {
+      const max = track.scrollWidth - track.clientWidth;
+      const nextLeft = track.scrollLeft + dir * step();
+      if (dir > 0 && nextLeft >= max - 8) {
+        track.scrollTo({ left: 0, behavior: "smooth" });
+        return;
+      }
+      if (dir < 0 && track.scrollLeft <= 8) {
+        track.scrollTo({ left: max, behavior: "smooth" });
+        return;
+      }
+      track.scrollBy({ left: dir * step(), behavior: "smooth" });
+    };
+    prev?.addEventListener("click", () => go(-1));
+    next?.addEventListener("click", () => go(1));
+
+    let drag = null;
+    track.addEventListener("dragstart", (event) => event.preventDefault());
+    track.addEventListener("pointerdown", (event) => {
+      drag = { x: event.clientX, left: track.scrollLeft };
+      track.classList.add("is-dragging");
+      track.setPointerCapture(event.pointerId);
+    });
+    track.addEventListener("pointermove", (event) => {
+      if (!drag) return;
+      track.scrollLeft = drag.left - (event.clientX - drag.x);
+    });
+    const endDrag = () => {
+      drag = null;
+      track.classList.remove("is-dragging");
+    };
+    track.addEventListener("pointerup", endDrag);
+    track.addEventListener("pointercancel", endDrag);
+
+    if (!reduceMotion) {
+      let timer = window.setInterval(() => go(1), 4200);
+      const pause = () => window.clearInterval(timer);
+      const resume = () => {
+        pause();
+        timer = window.setInterval(() => go(1), 4200);
+      };
+      carousel.addEventListener("mouseenter", pause);
+      carousel.addEventListener("mouseleave", resume);
+      carousel.addEventListener("focusin", pause);
+      carousel.addEventListener("focusout", resume);
+    }
+  }
+
   if (form) {
     const status = form.querySelector("[data-form-status]");
     const submit = form.querySelector('button[type="submit"]');

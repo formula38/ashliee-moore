@@ -13,12 +13,13 @@ Static GitHub Pages portfolio for **Ashliee Moore** — model · chef · promote
 
 ## Sections
 
-1. **Hero** — full-bleed rose editorial; brand-first name; CTAs
-2. **The Runway** — modeling / fashion shows
-3. **The Kitchen** — culinary hosting / dining experiences
-4. **The Scene** — events / promotion / brand presence
-5. **About** — bio + Instagram
-6. **Book** — Modeling / Culinary / Event promotion form (name, email, optional phone, date, location, optional social, message)
+1. **Hero** — slow rotating stills (roses, chartreuse, crimson) with a tilted look chip
+2. **The Runway** — horizontal film-strip carousel of fashion stills
+3. **The Glam** — tilted polaroid beauty close-ups
+4. **The Kitchen** — culinary hosting / dining experiences
+5. **The Scene** — slow marquee of events and brand presence
+6. **About** — bio + Instagram
+7. **Book** — Modeling / Culinary / Event promotion form (name, email, optional phone, date, location, optional social, message)
 
 ## Local preview
 
