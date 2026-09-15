@@ -156,9 +156,9 @@ CURATED = {
             "caption": "Engine stride",
         },
         {
-            "src": "assets/scene-04.jpg",
-            "alt": "A model in a black off-shoulder tulle top and geometric print maxi skirt poses in front of a dark steam engine with red wheels.",
-            "caption": "Tulle and steam",
+            "src": "assets/scene-05.jpg",
+            "alt": "On a wet rooftop lot, Ashliee in a long denim coat, red gloves, and red thigh boots leans against a gold ladder.",
+            "caption": "Rooftop denim",
         },
     ],
 }

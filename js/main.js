@@ -226,17 +226,46 @@
 
   const rotateLooks = (root, items, ms) => {
     const pool = uniqueBySrc(shuffle(items || []));
-    if (!root || pool.length < 2) return;
-    const imgs = [...root.querySelectorAll("img")];
-    const live = imgs.filter((img) => !img.closest("[aria-hidden='true']"));
-    const copies = imgs.filter((img) => img.closest("[aria-hidden='true']"));
-    const slots = live.length ? live : imgs;
+    if (!root || pool.length < 1) return;
+    const syncSlots = () => {
+      const imgs = [...root.querySelectorAll("img")];
+      const live = imgs.filter((img) => !img.closest("[aria-hidden='true']"));
+      return {
+        slots: live.length ? live : imgs,
+        copies: imgs.filter((img) => img.closest("[aria-hidden='true']")),
+      };
+    };
+    let { slots, copies } = syncSlots();
+    if (!slots.length) return;
+
+    // Never keep more cards than unique stills — leftover markup becomes adjacent dupes.
+    const trimSlots = (keep) => {
+      slots.slice(keep).forEach((img) => {
+        img.closest("figure")?.remove();
+      });
+      ({ slots, copies } = syncSlots());
+    };
+    trimSlots(Math.min(slots.length, pool.length));
+
     let cursor = Math.floor(Math.random() * pool.length);
     const paint = (animate) => {
+      ({ slots, copies } = syncSlots());
+      if (!slots.length) return;
       const reserved = visibleSrcs(slots);
-      const chosen = pickLooks(pool, slots.length, reserved, cursor);
+      let chosen = pickLooks(pool, slots.length, reserved, cursor);
+      if (chosen.length < slots.length) {
+        // Prefer fewer unique cards over repeating a still in the same strip.
+        chosen = pickLooks(pool, slots.length, new Set(), cursor);
+      }
+      if (chosen.length < slots.length) {
+        trimSlots(chosen.length);
+      }
+      if (!chosen.length) return;
       cursor = (cursor + Math.max(chosen.length, 1)) % pool.length;
+      const assigned = new Set();
       chosen.forEach((look, i) => {
+        if (!slots[i] || !look?.src || assigned.has(look.src)) return;
+        assigned.add(look.src);
         const apply = () => {
           swapLook(slots[i], look, i, animate);
           copies
@@ -251,7 +280,7 @@
       });
     };
     paint(false);
-    if (reduceMotion) return;
+    if (reduceMotion || pool.length < 2) return;
     window.setInterval(() => paint(true), ms);
   };
 
