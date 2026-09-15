@@ -9,7 +9,7 @@ Static GitHub Pages portfolio for **Ashliee Moore** — model · chef · promote
 - Plain HTML / CSS / JS (no framework)
 - Google Fonts: Instrument Serif + Sora
 - Public Instagram: [@ashliee007](https://www.instagram.com/ashliee007/)
-- Album stills live in `assets/library/` (fashion, culinary, cosmetology, press, events). `python3 scripts/import-looks.py` filters JPEGs into `js/looks.js` for the site. Do not hotlink Google Photos. Do not scrape extra social media into the repo.
+- Album stills live in `assets/library/` (fashion, culinary, cosmetology, press, events). Captions live in `assets/library/captions.json`. Run `python3 scripts/import-looks.py` to refresh `js/looks.js`. Do not hotlink Google Photos. Do not scrape extra social media into the repo.
 
 ## Sections
 

@@ -1,0 +1,93 @@
+{
+  "_skip": [
+    "culinary/004.jpg",
+    "culinary/005.jpg",
+    "culinary/010.jpg",
+    "fashion/020.jpg",
+    "culinary/008.jpg"
+  ],
+  "culinary/000.jpg": {
+    "caption": "Rosemary salmon",
+    "alt": "Seasoned salmon fillets with rosemary, peppers, onion, and lemon in a glass baking dish"
+  },
+  "culinary/001.jpg": {
+    "caption": "Lemon sear",
+    "alt": "Seared salmon topped with lemon, glazed carrots, and a creamy side salad"
+  },
+  "culinary/002.jpg": {
+    "caption": "Pan heat",
+    "alt": "Seasoned beef strips and peppers sizzling in a pan"
+  },
+  "culinary/003.jpg": {
+    "caption": "Surf & turf",
+    "alt": "Pan-seared steak tips with seasoned shrimp, corn, green beans, and rice"
+  },
+  "culinary/006.jpg": {
+    "caption": "Seafood linguine",
+    "alt": "Linguine in red sauce with mussels, clams, shrimp, and a whole prawn"
+  },
+  "culinary/007.jpg": {
+    "caption": "Herb fillet",
+    "alt": "Herb-crusted fish with lemon, sausage-topped mashed potatoes, and broccoli"
+  },
+  "cosmetology/000.jpg": {
+    "caption": "Denim close",
+    "alt": "Black and white beauty close-up of Ashliee in a denim jacket"
+  },
+  "cosmetology/001.jpg": {
+    "caption": "Soft glam",
+    "alt": "Beauty portrait of Ashliee with polished soft glam makeup"
+  },
+  "cosmetology/002.jpg": {
+    "caption": "Lash hour",
+    "alt": "Close-up beauty still highlighting lashes and finish"
+  },
+  "cosmetology/003.jpg": {
+    "caption": "Full face",
+    "alt": "Beauty portrait of Ashliee with a full glam look"
+  },
+  "events/000.jpg": {
+    "caption": "Ensemble lead",
+    "alt": "Black and white group editorial with Ashliee centered in denim"
+  },
+  "events/001.jpg": {
+    "caption": "Studio duo",
+    "alt": "Ashliee in a tiered fuzzy look posing with a companion in studio"
+  },
+  "events/002.jpg": {
+    "caption": "Shoot day",
+    "alt": "Behind-the-scenes energy from a location shoot"
+  },
+  "events/003.jpg": {
+    "caption": "Garage tulle",
+    "alt": "Editorial group in denim and orange tulle in a parking garage"
+  },
+  "events/004.jpg": {
+    "caption": "Rooftop call",
+    "alt": "Ashliee on a rooftop or outdoor event set"
+  },
+  "events/005.jpg": {
+    "caption": "Brand room",
+    "alt": "Ashliee representing brand presence at an event"
+  },
+  "events/006.jpg": {
+    "caption": "After glow",
+    "alt": "Ashliee in an after-hours event look"
+  },
+  "fashion/000.jpg": {
+    "caption": "Halo shore",
+    "alt": "Ashliee kneeling on the beach in a seafoam gown with a gold sunburst headpiece"
+  },
+  "culinary/009.jpg": {
+    "caption": "Lemon garlic chicken",
+    "alt": "Spice-rubbed chicken with lemon, garlic, peppers, and green onion in a glass dish"
+  },
+  "culinary/011.jpg": {
+    "caption": "Cabbage sauté",
+    "alt": "Sautéed cabbage with onions and bell peppers in a pan"
+  },
+  "culinary/012.jpg": {
+    "caption": "Grill packets",
+    "alt": "Foil packets of shrimp with lemon and sausage with corn on the grill"
+  }
+}

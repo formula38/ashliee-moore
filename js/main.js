@@ -60,11 +60,11 @@
   const heroSlides = document.querySelectorAll("[data-hero-stage] .hero__image");
   const heroLook = document.querySelector("[data-hero-look]");
 
-  const carousel = document.querySelector("[data-carousel]");
-  if (carousel) {
+  const wireCarousel = (carousel) => {
     const track = carousel.querySelector("[data-carousel-track]");
     const prev = carousel.querySelector("[data-carousel-prev]");
     const next = carousel.querySelector("[data-carousel-next]");
+    if (!track) return;
     const step = () => {
       const card = track.querySelector(".film__card");
       return card ? card.getBoundingClientRect().width + 16 : track.clientWidth * 0.8;
@@ -125,7 +125,9 @@
       carousel.addEventListener("focusin", pause);
       carousel.addEventListener("focusout", resume);
     }
-  }
+  };
+
+  document.querySelectorAll("[data-carousel]").forEach(wireCarousel);
 
   const looks = window.AshlieeLooks || {};
 
