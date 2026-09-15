@@ -9,13 +9,13 @@ window.AshlieeLooks = {
     },
     {
       src: "assets/fashion-06.jpg",
-      alt: "Ashliee in a chartreuse gown with oversized ruffle sleeves",
-      caption: "Look 02 — Chartreuse",
+      alt: "Outdoors, a model in black lace and a metallic gold ruffled collar holds a large bouquet of pink and white chrysanthemums.",
+      caption: "Garden ruff",
     },
     {
       src: "assets/fashion-04.jpg",
-      alt: "Ashliee in a crimson blazer editorial with crystal jewelry",
-      caption: "Look 03 — Crimson",
+      alt: "A model in a yellow damask hoodie, brown textured pants, and cream train leans against a bold black-white-and-orange mural.",
+      caption: "Mural profile",
     },
     {
       src: "assets/fashion-08.jpg",
@@ -28,24 +28,9 @@ window.AshlieeLooks = {
       caption: "Gilded shores",
     },
     {
-      src: "assets/library/fashion/002.jpg",
-      alt: "A model in a black feather-trimmed blazer dress walks an outdoor white runway at night toward a seated audience.",
-      caption: "Midnight runway",
-    },
-    {
-      src: "assets/library/fashion/004.jpg",
-      alt: "Several models in coordinated denim looks walk a white outdoor runway at night while spectators watch from folding chairs.",
-      caption: "Denim procession",
-    },
-    {
       src: "assets/library/fashion/006.jpg",
       alt: "A black-and-white close-up of a woman in a denim jacket with dramatic lashes, groomed brows, and slicked baby hairs.",
       caption: "Ink portrait",
-    },
-    {
-      src: "assets/library/fashion/007.jpg",
-      alt: "In black and white, a woman in a dark V-neck top rests a hand on her chest, showing large geometric patterned rings.",
-      caption: "Monochrome statement",
     },
     {
       src: "assets/library/fashion/008.jpg",
@@ -53,14 +38,14 @@ window.AshlieeLooks = {
       caption: "Leather repose",
     },
     {
-      src: "assets/library/fashion/009.jpg",
-      alt: "A woman in a red V-neck blazer adjusts thin gold glasses against a deep red studio backdrop, wearing space buns and layered jewelry.",
-      caption: "Scarlet lens",
-    },
-    {
       src: "assets/library/fashion/011.jpg",
       alt: "A beauty close-up shows pink glitter eyeshadow, matte red lips, and gold rings against a grey backdrop and burgundy velvet neckline.",
       caption: "Velvet shimmer",
+    },
+    {
+      src: "assets/library/fashion/012.jpg",
+      alt: "On a dim runway, a model wears a neon yellow dress with towering pleated ruffles framing her face and curly updo.",
+      caption: "Citron bloom",
     },
     {
       src: "assets/library/fashion/013.jpg",
@@ -68,59 +53,9 @@ window.AshlieeLooks = {
       caption: "Tiered citron",
     },
     {
-      src: "assets/library/fashion/015.jpg",
-      alt: "Outdoors, a woman with gold shimmer makeup and a pleated gold ruff collar over black lace looks downward in soft daylight.",
-      caption: "Gilded ruff",
-    },
-    {
-      src: "assets/library/fashion/016.jpg",
-      alt: "In a circular spotlight, a woman in a red lace bodysuit holds a grey fedora beside a bright white wall.",
-      caption: "Crimson spotlight",
-    },
-    {
       src: "assets/library/fashion/017.jpg",
       alt: "Low-key light casts a sharp profile shadow of a woman with gold shimmer makeup, long straight hair, and a magenta top.",
       caption: "Magenta hour",
-    },
-    {
-      src: "assets/library/fashion/019.jpg",
-      alt: "A woman in a burgundy velvet turtleneck dress with a waist knot stands before a white circular spotlight on a grey background.",
-      caption: "Velvet halo",
-    },
-    {
-      src: "assets/library/fashion/022.jpg",
-      alt: "A model walks a white runway in a cream patterned jacket, striped trousers with lace hems, rhinestone bow collar, and flowing skirt.",
-      caption: "Crystal collar walk",
-    },
-    {
-      src: "assets/library/fashion/023.jpg",
-      alt: "A model in a yellow damask hoodie, brown textured pants, and cream train leans against a bold black-white-and-orange mural.",
-      caption: "Mural profile",
-    },
-    {
-      src: "assets/library/fashion/024.jpg",
-      alt: "Dramatic red and white eye makeup and a rhinestone pointed collar accent a patterned yellow top before an orange sun mural.",
-      caption: "Crystal mural",
-    },
-    {
-      src: "assets/library/fashion/025.jpg",
-      alt: "Before crinkled gold foil, a model in a yellow damask jacket and rhinestone collar shields her eyes with one hand.",
-      caption: "Foil gold damask",
-    },
-    {
-      src: "assets/library/fashion/026.jpg",
-      alt: "Outdoors, a model in black lace and a metallic gold ruffled collar holds a large bouquet of pink and white chrysanthemums.",
-      caption: "Garden ruff",
-    },
-    {
-      src: "assets/library/fashion/029.jpg",
-      alt: "Standing in a shallow river, a model spreads the skirt of a beaded aqua gown while wearing a radiating gold spike crown.",
-      caption: "River radiance",
-    },
-    {
-      src: "assets/library/fashion/030.jpg",
-      alt: "In river water, a model twirls a cyan beaded gown outward in a circle, gold sunburst crown catching the light.",
-      caption: "Azure twirl",
     },
     {
       src: "assets/library/fashion/035.jpg",
@@ -131,41 +66,6 @@ window.AshlieeLooks = {
       src: "assets/library/fashion/036.jpg",
       alt: "A model in a black off-shoulder tulle top and geometric print maxi skirt poses in front of a dark steam engine with red wheels.",
       caption: "Tulle and steam",
-    },
-    {
-      src: "assets/library/fashion/037.jpg",
-      alt: "Two models walk a dark runway near a train display, one in a printed skirt and tulle top, the other in a colorful halter mini dress.",
-      caption: "Dual procession",
-    },
-    {
-      src: "assets/library/fashion/040.jpg",
-      alt: "At night against a concrete pillar, a woman in a blue patterned dress and white strappy heels rests one foot on a red rail.",
-      caption: "Night walk",
-    },
-    {
-      src: "assets/library/fashion/041.jpg",
-      alt: "Lit by flash at night, a woman in a blue marble-print dress with a high slit leans on a concrete column beside a metal railing.",
-      caption: "Concrete poise",
-    },
-    {
-      src: "assets/library/fashion/045.jpg",
-      alt: "On a sunny patio, a woman in a ribbed green mini dress and wide green hat looks back over her shoulder with geometric glasses.",
-      caption: "Emerald garden",
-    },
-    {
-      src: "assets/library/fashion/046.jpg",
-      alt: "In a gallery, a woman in an enormous black-and-gold baroque jumpsuit with fur-trimmed sleeves casts a sharp shadow on the wall.",
-      caption: "Baroque volume",
-    },
-    {
-      src: "assets/library/fashion/047.jpg",
-      alt: "Outdoors in sunlight, a woman crosses her ankles in a black-and-white plaid mini dress and oversized yellow-green plaid coat.",
-      caption: "Plaid layers",
-    },
-    {
-      src: "assets/library/fashion/048.jpg",
-      alt: "A woman in a vibrant African-print peplum top, orange beaded fringe, and spiral curls poses inside a bright boutique.",
-      caption: "Ankara peplum",
     }
   ],
   runway: [
@@ -181,23 +81,23 @@ window.AshlieeLooks = {
     },
     {
       src: "assets/fashion-06.jpg",
-      alt: "Ashliee in a chartreuse gown with oversized ruffle sleeves",
-      caption: "Chartreuse",
+      alt: "Outdoors, a model in black lace and a metallic gold ruffled collar holds a large bouquet of pink and white chrysanthemums.",
+      caption: "Garden ruff",
     },
     {
       src: "assets/fashion-07.jpg",
-      alt: "Ashliee peeking over a chartreuse ruffle sleeve on the runway",
-      caption: "Over the ruffle",
+      alt: "A model peeks over massive neon yellow ruffles of a sculptural gown, looking back over her shoulder on a dark runway.",
+      caption: "Tiered citron",
     },
     {
       src: "assets/fashion-04.jpg",
-      alt: "Ashliee in a crimson blazer editorial with crystal jewelry",
-      caption: "Crimson hour",
+      alt: "A model in a yellow damask hoodie, brown textured pants, and cream train leans against a bold black-white-and-orange mural.",
+      caption: "Mural profile",
     },
     {
       src: "assets/runway-02.jpg",
-      alt: "Ashliee in a two-piece fashion look",
-      caption: "Two-piece",
+      alt: "Ashliee in an aqua evening gown",
+      caption: "Aqua gown",
     },
     {
       src: "assets/runway-03.jpg",
@@ -206,8 +106,8 @@ window.AshlieeLooks = {
     },
     {
       src: "assets/runway-04.jpg",
-      alt: "Ashliee styled in handmade fashion for Sac Fashion Pro",
-      caption: "Sac Fashion Pro",
+      alt: "A woman in a black faux-leather shirt-dress sits in a wingback chair beside pampas grass under moody purple-tinted light.",
+      caption: "Leather repose",
     },
     {
       src: "assets/fashion-01.jpg",
@@ -215,34 +115,9 @@ window.AshlieeLooks = {
       caption: "Street runway",
     },
     {
-      src: "assets/library/fashion/000.jpg",
-      alt: "A model kneels on dark sand in a seafoam beaded gown and golden sunburst crown, one hand extended toward the water.",
-      caption: "Gilded shores",
-    },
-    {
-      src: "assets/library/fashion/004.jpg",
-      alt: "Several models in coordinated denim looks walk a white outdoor runway at night while spectators watch from folding chairs.",
-      caption: "Denim procession",
-    },
-    {
       src: "assets/library/fashion/006.jpg",
       alt: "A black-and-white close-up of a woman in a denim jacket with dramatic lashes, groomed brows, and slicked baby hairs.",
       caption: "Ink portrait",
-    },
-    {
-      src: "assets/library/fashion/007.jpg",
-      alt: "In black and white, a woman in a dark V-neck top rests a hand on her chest, showing large geometric patterned rings.",
-      caption: "Monochrome statement",
-    },
-    {
-      src: "assets/library/fashion/008.jpg",
-      alt: "A woman in a black faux-leather shirt-dress sits in a wingback chair beside pampas grass under moody purple-tinted light.",
-      caption: "Leather repose",
-    },
-    {
-      src: "assets/library/fashion/009.jpg",
-      alt: "A woman in a red V-neck blazer adjusts thin gold glasses against a deep red studio backdrop, wearing space buns and layered jewelry.",
-      caption: "Scarlet lens",
     },
     {
       src: "assets/library/fashion/011.jpg",
@@ -250,59 +125,9 @@ window.AshlieeLooks = {
       caption: "Velvet shimmer",
     },
     {
-      src: "assets/library/fashion/015.jpg",
-      alt: "Outdoors, a woman with gold shimmer makeup and a pleated gold ruff collar over black lace looks downward in soft daylight.",
-      caption: "Gilded ruff",
-    },
-    {
-      src: "assets/library/fashion/016.jpg",
-      alt: "In a circular spotlight, a woman in a red lace bodysuit holds a grey fedora beside a bright white wall.",
-      caption: "Crimson spotlight",
-    },
-    {
       src: "assets/library/fashion/017.jpg",
       alt: "Low-key light casts a sharp profile shadow of a woman with gold shimmer makeup, long straight hair, and a magenta top.",
       caption: "Magenta hour",
-    },
-    {
-      src: "assets/library/fashion/019.jpg",
-      alt: "A woman in a burgundy velvet turtleneck dress with a waist knot stands before a white circular spotlight on a grey background.",
-      caption: "Velvet halo",
-    },
-    {
-      src: "assets/library/fashion/022.jpg",
-      alt: "A model walks a white runway in a cream patterned jacket, striped trousers with lace hems, rhinestone bow collar, and flowing skirt.",
-      caption: "Crystal collar walk",
-    },
-    {
-      src: "assets/library/fashion/023.jpg",
-      alt: "A model in a yellow damask hoodie, brown textured pants, and cream train leans against a bold black-white-and-orange mural.",
-      caption: "Mural profile",
-    },
-    {
-      src: "assets/library/fashion/024.jpg",
-      alt: "Dramatic red and white eye makeup and a rhinestone pointed collar accent a patterned yellow top before an orange sun mural.",
-      caption: "Crystal mural",
-    },
-    {
-      src: "assets/library/fashion/025.jpg",
-      alt: "Before crinkled gold foil, a model in a yellow damask jacket and rhinestone collar shields her eyes with one hand.",
-      caption: "Foil gold damask",
-    },
-    {
-      src: "assets/library/fashion/026.jpg",
-      alt: "Outdoors, a model in black lace and a metallic gold ruffled collar holds a large bouquet of pink and white chrysanthemums.",
-      caption: "Garden ruff",
-    },
-    {
-      src: "assets/library/fashion/029.jpg",
-      alt: "Standing in a shallow river, a model spreads the skirt of a beaded aqua gown while wearing a radiating gold spike crown.",
-      caption: "River radiance",
-    },
-    {
-      src: "assets/library/fashion/030.jpg",
-      alt: "In river water, a model twirls a cyan beaded gown outward in a circle, gold sunburst crown catching the light.",
-      caption: "Azure twirl",
     },
     {
       src: "assets/library/fashion/035.jpg",
@@ -313,41 +138,6 @@ window.AshlieeLooks = {
       src: "assets/library/fashion/036.jpg",
       alt: "A model in a black off-shoulder tulle top and geometric print maxi skirt poses in front of a dark steam engine with red wheels.",
       caption: "Tulle and steam",
-    },
-    {
-      src: "assets/library/fashion/037.jpg",
-      alt: "Two models walk a dark runway near a train display, one in a printed skirt and tulle top, the other in a colorful halter mini dress.",
-      caption: "Dual procession",
-    },
-    {
-      src: "assets/library/fashion/040.jpg",
-      alt: "At night against a concrete pillar, a woman in a blue patterned dress and white strappy heels rests one foot on a red rail.",
-      caption: "Night walk · 040",
-    },
-    {
-      src: "assets/library/fashion/041.jpg",
-      alt: "Lit by flash at night, a woman in a blue marble-print dress with a high slit leans on a concrete column beside a metal railing.",
-      caption: "Concrete poise",
-    },
-    {
-      src: "assets/library/fashion/045.jpg",
-      alt: "On a sunny patio, a woman in a ribbed green mini dress and wide green hat looks back over her shoulder with geometric glasses.",
-      caption: "Emerald garden",
-    },
-    {
-      src: "assets/library/fashion/046.jpg",
-      alt: "In a gallery, a woman in an enormous black-and-gold baroque jumpsuit with fur-trimmed sleeves casts a sharp shadow on the wall.",
-      caption: "Baroque volume",
-    },
-    {
-      src: "assets/library/fashion/047.jpg",
-      alt: "Outdoors in sunlight, a woman crosses her ankles in a black-and-white plaid mini dress and oversized yellow-green plaid coat.",
-      caption: "Plaid layers",
-    },
-    {
-      src: "assets/library/fashion/048.jpg",
-      alt: "A woman in a vibrant African-print peplum top, orange beaded fringe, and spiral curls poses inside a bright boutique.",
-      caption: "Ankara peplum",
     }
   ],
   glam: [
@@ -363,8 +153,8 @@ window.AshlieeLooks = {
     },
     {
       src: "assets/glam-02.jpg",
-      alt: "Black and white portrait of Ashliee with graphic square jewelry",
-      caption: "Dice & ink",
+      alt: "A beauty close-up shows pink glitter eyeshadow, matte red lips, and gold rings against a grey backdrop and burgundy velvet neckline.",
+      caption: "Velvet shimmer",
     },
     {
       src: "assets/library/cosmetology/003.jpg",
@@ -404,26 +194,6 @@ window.AshlieeLooks = {
       caption: "Rosemary salmon",
     },
     {
-      src: "assets/library/culinary/001.jpg",
-      alt: "A seared salmon fillet topped with a lemon round rests on a white plate beside glazed carrots and a creamy side.",
-      caption: "The plate · 001",
-    },
-    {
-      src: "assets/library/culinary/002.jpg",
-      alt: "Motion-blurred beef strips seasoned in a pan toss with green pepper, onion, and carrot slices.",
-      caption: "Sizzling strips",
-    },
-    {
-      src: "assets/library/culinary/003.jpg",
-      alt: "A white plate holds sautéed shrimp, seared beef tips, yellow corn with green beans, and a mound of white rice.",
-      caption: "Surf and turf",
-    },
-    {
-      src: "assets/library/culinary/006.jpg",
-      alt: "Linguine in red sauce is topped with a whole langoustine, clams, mussels, and microgreens in a white bowl on a checkered cloth.",
-      caption: "Ocean linguine",
-    },
-    {
       src: "assets/library/culinary/007.jpg",
       alt: "A green rectangular plate holds a seasoned fish fillet with lemon, mashed potatoes with sausage, and steamed broccoli.",
       caption: "Green plate supper",
@@ -432,36 +202,6 @@ window.AshlieeLooks = {
       src: "assets/library/culinary/009.jpg",
       alt: "Raw chicken pieces in a glass dish are rubbed with spice, garlic, scallions, bell peppers, and a row of lemon slices.",
       caption: "Lemon lined chicken",
-    },
-    {
-      src: "assets/library/culinary/011.jpg",
-      alt: "A pot of sautéed green cabbage, red pepper, and onion glistens as a wooden utensil stirs the vegetables.",
-      caption: "Cabbage stir",
-    },
-    {
-      src: "assets/library/culinary/012.jpg",
-      alt: "On a grill, foil packets hold seasoned shrimp with lemon and onion above sausage, corn, and herbs, beside bubbling butter.",
-      caption: "Foil feast",
-    },
-    {
-      src: "assets/library/culinary/013.jpg",
-      alt: "Salmon fillets with spice, lemon, onion, and jalapeño cook in foil on a grill grate near a potato-and-onion packet.",
-      caption: "Grill and citrus",
-    },
-    {
-      src: "assets/library/culinary/014.jpg",
-      alt: "An aluminum tray is filled with raw shrimp, sliced sausage, lemon wedges, peppers, and reddish seasoning ready to cook.",
-      caption: "Boil prep",
-    },
-    {
-      src: "assets/library/culinary/017.jpg",
-      alt: "On a blue plate, a spice-crusted fish fillet with lemon sits beside creamy sides, greens, and a whole lobster tail.",
-      caption: "Lobster and fillet",
-    },
-    {
-      src: "assets/library/culinary/018.jpg",
-      alt: "Held over a stove, a blue plate presents seared fish with lemon atop orange sides and a bright cooked lobster tail.",
-      caption: "Blue plate catch",
     },
     {
       src: "assets/library/culinary/020.jpg",
@@ -474,31 +214,6 @@ window.AshlieeLooks = {
       caption: "Shell rinse",
     },
     {
-      src: "assets/library/culinary/022.jpg",
-      alt: "Steam rises from a pot of reddish broth filled with crab legs and round sausage slices.",
-      caption: "Steaming boil",
-    },
-    {
-      src: "assets/library/culinary/023.jpg",
-      alt: "A bowl of freshly sliced strawberries sits on a counter in front of a bottle of cran-apple juice and white tile.",
-      caption: "Berry prep",
-    },
-    {
-      src: "assets/library/culinary/024.jpg",
-      alt: "Shredded orange cheddar covers a creamy yellow base in a glass baking dish before baking.",
-      caption: "Cheddar crown",
-    },
-    {
-      src: "assets/library/culinary/025.jpg",
-      alt: "Two raw lobster tails lie side by side on a white tray, showing mottled shells and pale meat.",
-      caption: "Twin tails",
-    },
-    {
-      src: "assets/library/culinary/026.jpg",
-      alt: "A hand drops chunks of salmon into a simmering red tomato stew speckled with herbs and aromatics.",
-      caption: "Stew drop",
-    },
-    {
       src: "assets/library/culinary/027.jpg",
       alt: "Snow crab legs bubble in a teal Dutch oven while a blurred glass of red wine fills the foreground.",
       caption: "Wine and crab",
@@ -509,36 +224,21 @@ window.AshlieeLooks = {
       caption: "Red bowl feast",
     },
     {
-      src: "assets/library/culinary/030.jpg",
-      alt: "A hand presses start on a Ninja blender filled with greens atop yellow fruit against a geometric tile backsplash.",
-      caption: "Green blend",
-    },
-    {
       src: "assets/library/culinary/031.jpg",
       alt: "Produce, almond milk, eggs, and supplement bottles are arranged on a gray kitchen counter by the stove.",
       caption: "Market morning",
     },
     {
-      src: "assets/library/culinary/032.jpg",
-      alt: "A hand tips a pan of lemony broth over a sheet pan piled with crab, shrimp, crawfish, sausage, and green onion.",
-      caption: "Pour over tray",
-    },
-    {
       src: "assets/library/culinary/033.jpg",
       alt: "On a black etched plate, lobster tail and penne in golden sauce are garnished with scallions, microgreens, and grilled lemon.",
       caption: "Lobster penne",
-    },
-    {
-      src: "assets/library/culinary/034.jpg",
-      alt: "A close-up shows a seasoned lobster tail drizzled with cream over pasta, scallions, and microgreens on a dark plate.",
-      caption: "Gilded tail",
     }
   ],
   scene: [
     {
       src: "assets/scene-01.jpg",
-      alt: "Ashliee representing LiBush Africa fashion and culture",
-      caption: "LiBush Africa",
+      alt: "In black and white, a woman in a buttoned denim jacket stands centered among four softly blurred figures behind her.",
+      caption: "Denim ensemble",
     },
     {
       src: "assets/scene-02.jpg",
@@ -547,43 +247,13 @@ window.AshlieeLooks = {
     },
     {
       src: "assets/scene-03.jpg",
-      alt: "Studio portrait collaboration with VVS Studios in downtown Sacramento",
-      caption: "VVS Studios",
+      alt: "On a reflective runway beside a vintage locomotive, a model wears a black tulle crop top and colorful printed maxi skirt.",
+      caption: "Engine stride",
     },
     {
       src: "assets/scene-04.jpg",
-      alt: "Ashliee in a pink lace dress during a sunset shoot",
-      caption: "Sunset editorial",
-    },
-    {
-      src: "assets/library/events/000.jpg",
-      alt: "In black and white, a woman in a buttoned denim jacket stands centered among four softly blurred figures behind her.",
-      caption: "Denim ensemble",
-    },
-    {
-      src: "assets/library/events/001.jpg",
-      alt: "A woman in a pink-to-cream fringed high-neck piece stands beside a laughing man in a cap and graphic tee before a brown backdrop.",
-      caption: "Fringe moment",
-    },
-    {
-      src: "assets/library/events/002.jpg",
-      alt: "On a sandy river shore, a photographer crouches to shoot a model in a mint gown and gold crown seated by the water.",
-      caption: "Riverbank set",
-    },
-    {
-      src: "assets/library/events/003.jpg",
-      alt: "Five models in denim and orange tulle pose in a parking garage while a crew member arranges fabric on the concrete floor.",
-      caption: "Garage tableau",
-    },
-    {
-      src: "assets/library/events/004.jpg",
-      alt: "On a wet rooftop lot, a woman in a long denim coat, red gloves, and red thigh boots leans against a gold ladder.",
-      caption: "Rooftop denim",
-    },
-    {
-      src: "assets/library/events/006.jpg",
-      alt: "On an outdoor runway, a model in a green ribbed dress, peacock-feather hat, and gold chains walks past seated guests.",
-      caption: "Peacock walk",
+      alt: "A model in a black off-shoulder tulle top and geometric print maxi skirt poses in front of a dark steam engine with red wheels.",
+      caption: "Tulle and steam",
     }
   ]
 };

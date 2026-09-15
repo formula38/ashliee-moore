@@ -47,6 +47,34 @@ img {
   height: auto;
 }
 
+/* Frame the media box; never stretch bitmaps (object-fit: cover only). */
+.film__card,
+.polaroid,
+.kitchen__media,
+.tasting figure,
+.about__media {
+  position: relative;
+  isolation: isolate;
+}
+
+.film__card > img,
+.polaroid > img,
+.kitchen__media > img,
+.tasting figure:not(.tasting__hero) > img,
+.about__media > img {
+  width: 100%;
+  height: auto;
+  max-width: none;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+.kitchen__media > img,
+.tasting figure:not(.tasting__hero) > img {
+  object-position: center center;
+}
+
 a {
   color: inherit;
   text-decoration-thickness: 1px;
@@ -436,23 +464,6 @@ h2 {
   scroll-snap-align: start;
 }
 
-.film__card img,
-.polaroid img,
-.marquee img,
-.kitchen__media img,
-.tasting img,
-.about__media img {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: center 18%;
-}
-
-.kitchen__media img,
-.tasting img {
-  object-position: center center;
-}
-
 main img {
   cursor: zoom-in;
 }
@@ -549,10 +560,6 @@ main img {
   margin-bottom: 1.75rem;
 }
 
-.polaroid img {
-  aspect-ratio: 4 / 5;
-}
-
 .polaroid figcaption {
   margin-top: 0.7rem;
   font-family: var(--font-display);
@@ -637,15 +644,19 @@ main img {
 
 .tasting__hero {
   grid-row: span 2;
-  display: flex;
-  flex-direction: column;
+  min-height: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
-.tasting__hero img {
-  flex: 1 1 auto;
+.tasting__hero > img {
+  width: 100%;
   height: 100%;
+  min-height: 0;
+  max-width: none;
   aspect-ratio: auto;
   object-fit: cover;
+  object-position: center center;
 }
 
 .zoom {
@@ -941,8 +952,9 @@ main img {
     grid-row: auto;
   }
 
-  .tasting__hero img {
-    aspect-ratio: 4 / 5;
+  .tasting__hero > img {
+    aspect-ratio: 3 / 4;
+    height: auto;
   }
 
   .book__pair {

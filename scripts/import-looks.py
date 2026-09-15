@@ -15,6 +15,15 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 LIBRARY = ROOT / "assets" / "library"
 LOOKS = ROOT / "js" / "looks.js"
 MIN_BYTES = 90 * 1024
+# Reject anamorphically stretched dumps and extreme phone/landscape stills
+# that look warped inside the site's 4:5 frames.
+ASPECT_BANDS = {
+    "fashion": (0.70, 0.86),
+    "cosmetology": (0.70, 0.86),
+    "events": (0.70, 0.90),
+    "culinary": (0.70, 1.40),
+    "press": (0.55, 1.40),
+}
 
 CURATED = {
     "hero": [
@@ -25,13 +34,13 @@ CURATED = {
         },
         {
             "src": "assets/fashion-06.jpg",
-            "alt": "Ashliee in a chartreuse gown with oversized ruffle sleeves",
-            "caption": "Look 02 — Chartreuse",
+            "alt": "Outdoors, a model in black lace and a metallic gold ruffled collar holds a large bouquet of pink and white chrysanthemums.",
+            "caption": "Garden ruff",
         },
         {
             "src": "assets/fashion-04.jpg",
-            "alt": "Ashliee in a crimson blazer editorial with crystal jewelry",
-            "caption": "Look 03 — Crimson",
+            "alt": "A model in a yellow damask hoodie, brown textured pants, and cream train leans against a bold black-white-and-orange mural.",
+            "caption": "Mural profile",
         },
         {
             "src": "assets/fashion-08.jpg",
@@ -52,23 +61,23 @@ CURATED = {
         },
         {
             "src": "assets/fashion-06.jpg",
-            "alt": "Ashliee in a chartreuse gown with oversized ruffle sleeves",
-            "caption": "Chartreuse",
+            "alt": "Outdoors, a model in black lace and a metallic gold ruffled collar holds a large bouquet of pink and white chrysanthemums.",
+            "caption": "Garden ruff",
         },
         {
             "src": "assets/fashion-07.jpg",
-            "alt": "Ashliee peeking over a chartreuse ruffle sleeve on the runway",
-            "caption": "Over the ruffle",
+            "alt": "A model peeks over massive neon yellow ruffles of a sculptural gown, looking back over her shoulder on a dark runway.",
+            "caption": "Tiered citron",
         },
         {
             "src": "assets/fashion-04.jpg",
-            "alt": "Ashliee in a crimson blazer editorial with crystal jewelry",
-            "caption": "Crimson hour",
+            "alt": "A model in a yellow damask hoodie, brown textured pants, and cream train leans against a bold black-white-and-orange mural.",
+            "caption": "Mural profile",
         },
         {
             "src": "assets/runway-02.jpg",
-            "alt": "Ashliee in a two-piece fashion look",
-            "caption": "Two-piece",
+            "alt": "Ashliee in an aqua evening gown",
+            "caption": "Aqua gown",
         },
         {
             "src": "assets/runway-03.jpg",
@@ -77,8 +86,8 @@ CURATED = {
         },
         {
             "src": "assets/runway-04.jpg",
-            "alt": "Ashliee styled in handmade fashion for Sac Fashion Pro",
-            "caption": "Sac Fashion Pro",
+            "alt": "A woman in a black faux-leather shirt-dress sits in a wingback chair beside pampas grass under moody purple-tinted light.",
+            "caption": "Leather repose",
         },
         {
             "src": "assets/fashion-01.jpg",
@@ -99,8 +108,8 @@ CURATED = {
         },
         {
           "src": "assets/glam-02.jpg",
-          "alt": "Black and white portrait of Ashliee with graphic square jewelry",
-          "caption": "Dice & ink",
+          "alt": "A beauty close-up shows pink glitter eyeshadow, matte red lips, and gold rings against a grey backdrop and burgundy velvet neckline.",
+          "caption": "Velvet shimmer",
         },
     ],
     "tasting": [
@@ -133,8 +142,8 @@ CURATED = {
     "scene": [
         {
             "src": "assets/scene-01.jpg",
-            "alt": "Ashliee representing LiBush Africa fashion and culture",
-            "caption": "LiBush Africa",
+            "alt": "In black and white, a woman in a buttoned denim jacket stands centered among four softly blurred figures behind her.",
+            "caption": "Denim ensemble",
         },
         {
             "src": "assets/scene-02.jpg",
@@ -143,13 +152,13 @@ CURATED = {
         },
         {
             "src": "assets/scene-03.jpg",
-            "alt": "Studio portrait collaboration with VVS Studios in downtown Sacramento",
-            "caption": "VVS Studios",
+            "alt": "On a reflective runway beside a vintage locomotive, a model wears a black tulle crop top and colorful printed maxi skirt.",
+            "caption": "Engine stride",
         },
         {
             "src": "assets/scene-04.jpg",
-            "alt": "Ashliee in a pink lace dress during a sunset shoot",
-            "caption": "Sunset editorial",
+            "alt": "A model in a black off-shoulder tulle top and geometric print maxi skirt poses in front of a dark steam engine with red wheels.",
+            "caption": "Tulle and steam",
         },
     ],
 }
@@ -293,6 +302,23 @@ def is_jpeg(path: pathlib.Path) -> bool:
     return path.read_bytes()[:3] == b"\xff\xd8\xff"
 
 
+def aspect_ok(path: pathlib.Path, album: str) -> bool:
+    try:
+        from PIL import Image
+    except ImportError:
+        return True
+    band = ASPECT_BANDS.get(album)
+    if not band:
+        return True
+    lo, hi = band
+    with Image.open(path) as im:
+        width, height = im.size
+    if height <= 0:
+        return False
+    ratio = width / height
+    return lo <= ratio <= hi
+
+
 def file_digest(src: str) -> str | None:
     path = ROOT / src
     if not path.is_file():
@@ -377,6 +403,8 @@ def build_pool(name: str, seen: set[str], book: dict) -> list[dict[str, str]]:
         if path.stat().st_size < MIN_BYTES:
             continue
         if not is_jpeg(path):
+            continue
+        if not aspect_ok(path, album):
             continue
         digest = md5_of(path)
         if digest in seen:
