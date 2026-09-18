@@ -1,0 +1,4 @@
+name,lane,source,contact,status,next_action,next_action_date,fee_or_trade,notes,created
+Example Designer Sac,modeling,IG DM,name@email.com,warm,Send digitals + rate card,2026-09-20,cash TBD,Met at show,2026-09-17
+Example Soft Glam Bride,cosmo,referral,555-0100,new,Send booking form + deposit info,2026-09-18,$___,Wedding guest glam,2026-09-17
+Example Private Dinner,culinary,site form,host@email.com,nurture,Send menu options,2026-09-25,fee+groceries,8 guests,2026-09-17

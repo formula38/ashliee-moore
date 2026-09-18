@@ -52,6 +52,10 @@ When the name is registered:
    - `CNAME` `www` → `formula38.github.io`
 3. Enable HTTPS in Pages settings after DNS propagates
 
+## Manager paperwork
+
+Triple 8 talent-ops templates (agreements, rate card, invoices, etc.) live in [`management/paperwork/`](management/paperwork/). Not linked from the public site UI.
+
 ## Next upgrades
 
 - Select stills from the Google Photos content bucket into `assets/` ([TRI-211](https://linear.app/triple-8-media-group/issue/TRI-211))
