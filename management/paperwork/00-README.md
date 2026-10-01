@@ -34,6 +34,15 @@ These are **working templates / examples** for Triple 8 Media Group’s internal
 | 11 | `11-gig-day-checklist.md` | Night-before + call-day checklist |
 | 12 | `12-boundary-and-decline-scripts.md` | Decline sexualized / bad-fit work |
 | 13 | `13-inquiry-reply-templates.md` | Email/DM replies for new leads |
+| 14 | `14-talent-console-gaps.md` | S38 Talent-tab feature gaps (photo upload, contacts, etc.) |
+| 15 | `15-career-path.md` | Long-range path: marketing degree toward an Emily-in-Paris seat, from Sacramento |
+
+## Active deal (2026-09-22)
+
+**E2 Biz Connect End of Summer Mixer** — [TRI-301](https://linear.app/triple-8-media-group/issue/TRI-301/thursdays-winery-business-event-mixer)  
+**Thu 2026-09-24 · 6–8 PM** · Wolfe Heights Estates Winery · free entry. Memo `T8-AM-20260922-01`.  
+
+Prior: DEB Sac 2026-09-19 — archive `03a-deal-memo-DEB-20260919.md`; raws due 2026-10-03.
 
 ## Locked brand rules (copy onto every external deal)
 

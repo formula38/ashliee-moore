@@ -1,11 +1,12 @@
-# Ashliee Moore — Rate card (v1 template)
+# Ashliee Moore — Rate card (v1)
 
-**Contact / booking:** Triple 8 Media Group · [BOOKING EMAIL] · [PHONE]  
+**Contact / booking:** Triple 8 Media Group · royaltymaxwin@gmail.com  
 **Portfolio:** https://formula38.github.io/ashliee-moore/  
 **Based in:** Sacramento, CA  
-**Updated:** [YYYY-MM-DD]
+**Updated:** 2026-09-19  
+**Working mix:** 80% modeling / 20% cosmetology (culinary light)
 
-Rates are starting points. Final fees depend on usage, hours, travel, and exclusivity.
+Rates are starting points for Sac / NorCal. Final fees depend on usage, hours, travel, and exclusivity. 90-day modeling cash band: **$750–$1,000 / month** (and/or clothing + networking + raw photos).
 
 ---
 
@@ -13,23 +14,24 @@ Rates are starting points. Final fees depend on usage, hours, travel, and exclus
 
 | Service | Rate | Notes |
 | -- | -- | -- |
-| Runway / fashion show (local) | $[___] show or $[___]/hr | Fitting fee if separate: $[___] |
-| Fitting only | $[___] | Credited toward show fee if booked |
-| Lookbook / e-comm day (8 hr) | $[___] | OT after 8 hrs: $[___]/hr |
-| Editorial / print day (8 hr) | $[___] | Usage extra — see below |
-| Commercial / brand day (8 hr) | $[___] | Usage + exclusivity extra |
-| Half day (≤4 hr) | $[___] | |
-| Appearance / hosting (brand event) | $[___] | |
+| Runway / fashion show (local) | $175 / show | Fitting same day included; separate fitting $50 |
+| Fitting only | $50 | Credited if show books within 14 days |
+| Lookbook / e-comm day (8 hr) | $450 | OT after 8 hrs: $65 / hr |
+| Editorial / print day (8 hr) | $500 | Usage extra — see below |
+| Commercial / brand day (8 hr) | $650 | Usage + exclusivity extra |
+| Half day (≤4 hr) | $275 | |
+| Appearance / hosting (brand event) | $250–$400 | Cash; or **approved trade** (networking + raws + wardrobe) |
+| Invite-table host (e.g. Dîner en Blanc) | Trade / $0 seat | Host seat complimentary; guest tickets billed to guests; content + networking are the trade |
 
-**Minimum booking:** $[___] or [2] hours.
+**Minimum booking:** $150 or 2 hours.
 
 ### Usage add-ons (modeling / content)
 
 | Usage | Add-on |
 | -- | -- |
-| Social organic only (client channels, [6] months) | Included / +$[___] |
-| Paid social / ads | +$[___] or +[__]% |
-| Website / lookbook (perpetual) | +$[___] |
+| Social organic only (client channels, 6 months) | Included |
+| Paid social / ads | +$150 or +25% |
+| Website / lookbook (perpetual) | +$100 |
 | Billboards / OOH | Quote |
 | Exclusive category hold | Quote |
 
@@ -38,27 +40,27 @@ Rates are starting points. Final fees depend on usage, hours, travel, and exclus
 | Zone | Fee |
 | -- | -- |
 | Sacramento metro | Included |
-| Greater Sac / [X] miles | $[___] flat or mileage |
-| Bay Area day trip | $[___] + travel time or overnight |
-| Overnight | Hotel + per diem $[___] + day rate |
+| Greater Sac / ≤40 miles | $40 flat |
+| Bay Area day trip | $125 + travel time or overnight |
+| Overnight | Hotel + $75 per diem + day rate |
 
 ---
 
 ## Cosmetology (fashion-centric)
 
-CA licensed. Menu starter (edit to what she actually offers):
+CA licensed.
 
 | Service | Rate | Duration |
 | -- | -- | -- |
-| Soft glam (event / shoot) | $[___] | [60–90] min |
-| Full glam / show-day | $[___] | [90–120] min |
-| Lash + brow add-on | $[___] | |
-| On-location / travel | $[___] within Sac; quote beyond | |
-| Kit fee (if supplies heavy) | $[___] | |
+| Soft glam (event / shoot) | $95 | 60–90 min |
+| Full glam / show-day | $140 | 90–120 min |
+| Lash + brow add-on | $35 | |
+| On-location / travel | $25 within Sac; quote beyond | |
+| Kit fee (if supplies heavy) | $15 | |
 
-**Deposit to hold date:** [50]% nonrefundable  
+**Deposit to hold date:** 50% nonrefundable  
 **Balance due:** day of service  
-**Cancel &lt; 48 hrs:** deposit forfeited / reschedule once
+**Cancel < 48 hrs:** deposit forfeited / reschedule once
 
 ---
 
@@ -66,19 +68,21 @@ CA licensed. Menu starter (edit to what she actually offers):
 
 | Experience | Rate | Guests |
 | -- | -- | -- |
-| Private dinner (plated) | $[___] + groceries | [4–8] |
-| Seafood boil / family-style | $[___] + groceries | [6–12] |
+| Private dinner (plated) | $250 + groceries | 4–8 |
+| Seafood boil / family-style | $300 + groceries | 6–12 |
 | Fashion-host tasting night | Quote | |
 
-**Deposit:** [50]% to hold  
-**Groceries:** billed at cost (+ [10]% shopping fee optional)  
+**Deposit:** 50% to hold  
+**Groceries:** billed at cost (+ 10% shopping fee optional)  
 **Travel / venue:** quote
 
 ---
 
 ## Trade policy (short)
 
-Trade accepted **only** when it delivers **clothing and/or solid networking and/or raw photos** usable for the book, and never for sexualized concepts. Requires signed trade agreement.
+Trade accepted **only** when it delivers **clothing and/or solid networking and/or raw photos** usable for the book, and never for sexualized concepts. Requires signed trade agreement (`05-trade-tfp-agreement.md`).
+
+**Dîner en Blanc–style invites** count as trade when: host seat is complimentary, photographer captures usable stills, and guest models’ tickets are **not** paid by Talent/Manager unless separately agreed.
 
 ---
 
