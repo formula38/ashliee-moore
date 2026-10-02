@@ -160,6 +160,56 @@ CURATED = {
             "alt": "On a wet rooftop lot, Ashliee in a long denim coat, red gloves, and red thigh boots leans against a gold ladder.",
             "caption": "Rooftop denim",
         },
+        {
+            "src": "assets/library/events/007.jpg",
+            "alt": "Ashliee seated in a white slip dress and black sunglasses in a leather chair under a tent at Dîner en Blanc Sacramento.",
+            "caption": "White chair",
+        },
+        {
+            "src": "assets/library/events/008.jpg",
+            "alt": "Ashliee in a white slit dress and sunglasses poses inside a Vogue Dîner en Blanc Sacramento cover frame.",
+            "caption": "Cover stand",
+        },
+        {
+            "src": "assets/library/events/009.jpg",
+            "alt": "Close portrait of Ashliee in a white dress and cat-eye sunglasses, one hand at her temple.",
+            "caption": "Cat-eye",
+        },
+        {
+            "src": "assets/library/events/011.jpg",
+            "alt": "Ashliee in a white gown stands at a cigar display under the Dîner en Blanc tent.",
+            "caption": "Cigar table",
+        },
+        {
+            "src": "assets/library/events/012.jpg",
+            "alt": "Ashliee laughs in a white gown while holding a cigar beside a barrel display.",
+            "caption": "Cigar pour",
+        },
+        {
+            "src": "assets/library/events/013.jpg",
+            "alt": "Ashliee and three guests in white pose on a Vogue Dîner en Blanc Sacramento cover.",
+            "caption": "Table of four",
+        },
+        {
+            "src": "assets/library/events/014.jpg",
+            "alt": "Ashliee stands centered on the Vogue Dîner en Blanc cover in a white slit dress.",
+            "caption": "Belle Époque",
+        },
+        {
+            "src": "assets/library/events/015.jpg",
+            "alt": "Four women in white pose on an illuminated Vogue Dîner en Blanc cover at dusk.",
+            "caption": "Cover night",
+        },
+        {
+            "src": "assets/library/events/016.jpg",
+            "alt": "Full-length portrait of Ashliee seated in a white gown, sunglasses, and strappy heels.",
+            "caption": "White gown",
+        },
+        {
+            "src": "assets/library/events/010.jpg",
+            "alt": "Dîner en Blanc Sacramento guests dressed in white fill the lawn for the tenth year.",
+            "caption": "Tenth year",
+        },
     ],
 }
 
