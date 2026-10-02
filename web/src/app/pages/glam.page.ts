@@ -1,4 +1,5 @@
 import { Component, DestroyRef, OnInit, inject } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { ApiService } from '../core/api.service';
 import { Zoom } from '../core/zoom';
 import { Reveal } from '../shared/reveal';
@@ -6,9 +7,9 @@ import { SlotReel } from '../shared/slot-reel';
 
 @Component({
   selector: 'app-glam',
-  imports: [Reveal],
+  imports: [Reveal, RouterLink],
   template: `
-    <section class="section section--glam" appReveal>
+    <section class="section spread section--glam" appReveal>
       <div class="section__intro">
         <p class="eyebrow">The Glam</p>
         <h1>Close-ups with a little mischief.</h1>
@@ -22,6 +23,7 @@ import { SlotReel } from '../shared/slot-reel';
           </figure>
         }
       </div>
+      <a class="text-link" routerLink="/kitchen">The Kitchen</a>
     </section>
   `,
 })
@@ -33,6 +35,9 @@ export class GlamPage implements OnInit {
   readonly reel = new SlotReel(3, 7200);
 
   ngOnInit() {
-    this.api.looks('glam').subscribe((rows) => this.reel.load(rows, this.destroyRef));
+    this.api.looks('glam').subscribe({
+      next: (rows) => this.reel.load(rows, this.destroyRef),
+      error: () => undefined,
+    });
   }
 }

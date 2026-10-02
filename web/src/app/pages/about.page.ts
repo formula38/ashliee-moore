@@ -1,4 +1,5 @@
 import { Component, OnInit, inject, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { ApiService, Look } from '../core/api.service';
 import { Zoom } from '../core/zoom';
 import { Reveal } from '../shared/reveal';
@@ -13,9 +14,9 @@ const FALLBACK: Look = {
 
 @Component({
   selector: 'app-about',
-  imports: [Reveal],
+  imports: [Reveal, RouterLink],
   template: `
-    <section class="section section--about" appReveal>
+    <section class="section spread section--about" appReveal>
       <div class="about">
         @if (portrait(); as look) {
           <figure class="about__media">
@@ -32,6 +33,7 @@ const FALLBACK: Look = {
           </p>
           <blockquote>“A window to the soul, where roses bloom in vibrant red.”</blockquote>
           <a class="btn btn--ghost" href="https://www.instagram.com/ashliee007/" target="_blank" rel="noopener noreferrer">&#64;ashliee007 on Instagram</a>
+          <a class="text-link" routerLink="/book">Book</a>
         </div>
       </div>
     </section>

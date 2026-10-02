@@ -44,6 +44,9 @@ export interface CalendarEvent {
   notes?: string;
   status: string;
   publiclyViewable: boolean;
+  flyerSrc?: string;
+  rsvpEmail?: string;
+  eventUrl?: string;
 }
 
 export interface RateItem {
@@ -66,6 +69,10 @@ export class ApiService {
 
   publicEvents() {
     return this.http.get<CalendarEvent[]>(`${API}/events`);
+  }
+
+  publicEvent(id: number) {
+    return this.http.get<CalendarEvent>(`${API}/events/${id}`);
   }
 
   inquire(body: InquiryPayload) {
@@ -94,6 +101,16 @@ export class ApiService {
     return body.id
       ? this.http.patch<CalendarEvent>(`${API}/admin/events/${body.id}`, body)
       : this.http.post<CalendarEvent>(`${API}/admin/events`, body);
+  }
+
+  deleteEvent(id: number) {
+    return this.http.delete<void>(`${API}/admin/events/${id}`);
+  }
+
+  uploadFlyer(id: number, file: File) {
+    const body = new FormData();
+    body.append('file', file);
+    return this.http.post<CalendarEvent>(`${API}/admin/events/${id}/flyer`, body);
   }
 
   rates() {

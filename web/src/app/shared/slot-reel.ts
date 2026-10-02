@@ -11,6 +11,10 @@ export class SlotReel {
   constructor(private readonly count: number, private readonly intervalMs: number) {}
 
   load(pool: Look[], destroyRef: DestroyRef) {
+    if (typeof window === 'undefined') {
+      this.slots.set(pool.slice(0, Math.min(this.count, pool.length)));
+      return;
+    }
     window.clearInterval(this.timer);
     const size = Math.min(this.count, pool.length);
     this.slots.set(pool.slice(0, size));

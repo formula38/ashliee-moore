@@ -15,9 +15,14 @@ import com.triple8.ashliee.security.JwtService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -30,6 +35,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.server.ResponseStatusException;
 
 @RestController
@@ -42,10 +48,12 @@ class ApiControllers {
     private final AdminUserRepository admins;
     private final PasswordEncoder encoder;
     private final JwtService jwt;
+    private final Path assetsDir;
 
     ApiControllers(LookRepository looks, InquiryRepository inquiries, LeadRepository leads,
                    CalendarEventRepository events, RateItemRepository rates, AdminUserRepository admins,
-                   PasswordEncoder encoder, JwtService jwt) {
+                   PasswordEncoder encoder, JwtService jwt,
+                   @Value("${ashliee.assets-dir}") String assetsDir) {
         this.looks = looks;
         this.inquiries = inquiries;
         this.leads = leads;
@@ -54,6 +62,7 @@ class ApiControllers {
         this.admins = admins;
         this.encoder = encoder;
         this.jwt = jwt;
+        this.assetsDir = Path.of(assetsDir).toAbsolutePath().normalize();
     }
 
     @GetMapping("/api/v1/looks")
@@ -149,6 +158,25 @@ class ApiControllers {
         if (body.status() != null) row.setStatus(body.status());
         if (body.eventDate() != null) row.setEventDate(body.eventDate());
         if (body.publiclyViewable() != null) row.setPubliclyViewable(body.publiclyViewable());
+        if (body.rsvpEmail() != null) row.setRsvpEmail(blankToNull(body.rsvpEmail()));
+        if (body.eventUrl() != null) row.setEventUrl(blankToNull(body.eventUrl()));
+        return events.save(row);
+    }
+
+    @PostMapping("/api/v1/admin/events/{id}/flyer")
+    CalendarEvent uploadFlyer(@PathVariable long id, @RequestParam("file") MultipartFile file) throws IOException {
+        CalendarEvent row = events.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+        String ext = flyerExtension(file);
+        if (file.getSize() > 8_000_000) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Flyer is too large.");
+        }
+        Path dir = assetsDir.resolve("flyers");
+        Files.createDirectories(dir);
+        for (String old : List.of("jpg", "png", "webp")) {
+            Files.deleteIfExists(dir.resolve(id + "." + old));
+        }
+        Files.copy(file.getInputStream(), dir.resolve(id + "." + ext), StandardCopyOption.REPLACE_EXISTING);
+        row.setFlyerSrc("/media/flyers/" + id + "." + ext);
         return events.save(row);
     }
 
@@ -177,6 +205,21 @@ class ApiControllers {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     void deleteRate(@PathVariable long id) { rates.deleteById(id); }
 
+    private static String blankToNull(String value) {
+        String trimmed = value.trim();
+        return trimmed.isEmpty() ? null : trimmed;
+    }
+
+    private static String flyerExtension(MultipartFile file) {
+        String type = file.getContentType() == null ? "" : file.getContentType();
+        return switch (type) {
+            case "image/jpeg" -> "jpg";
+            case "image/png" -> "png";
+            case "image/webp" -> "webp";
+            default -> throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Flyer must be a JPEG, PNG, or WebP.");
+        };
+    }
+
     private static void bodySet(Lead body) {
         if (body.getStatus() == null) body.setStatus("warm");
         if (body.getLane() == null) body.setLane("modeling");
@@ -197,4 +240,5 @@ record InquiryRequest(
 
 record LoginRequest(String username, String password) {}
 
-record EventPatch(LocalDate eventDate, String title, String notes, String status, Boolean publiclyViewable) {}
+record EventPatch(LocalDate eventDate, String title, String notes, String status, Boolean publiclyViewable,
+                     String rsvpEmail, String eventUrl) {}

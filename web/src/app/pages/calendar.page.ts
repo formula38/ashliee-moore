@@ -1,29 +1,39 @@
-import { Component, OnInit, inject, signal } from '@angular/core';
-import { ApiService, CalendarEvent } from '../core/api.service';
+import { Component, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { CalendarBoard } from '../shared/calendar-board';
 
 @Component({
   selector: 'app-calendar',
+  imports: [CalendarBoard, RouterLink],
   template: `
-    <section class="section">
-      <p class="eyebrow">Calendar</p>
-      <h1>Public dates</h1>
-      <p>Only events marked publicly viewable appear here. Private holds stay on the desk.</p>
-      @if (events().length === 0) {
-        <p>No public dates yet.</p>
-      }
-      <ul>
-        @for (event of events(); track event.id) {
-          <li><strong>{{ event.eventDate }}</strong> — {{ event.title }}</li>
+    <section class="section spread section--calendar">
+      <div class="section__intro">
+        <p class="eyebrow">Calendar</p>
+        <h1>{{ editable() ? 'Desk calendar' : 'Public dates' }}</h1>
+        <p>
+          @if (editable()) {
+            Month, week, or day. Click a day to add a date, or a chip to edit it.
+          } @else {
+            Only events marked publicly viewable appear here. Holds stay on the desk.
+          }
+        </p>
+        @if (!editable()) {
+          <a class="text-link" routerLink="/admin/login" [queryParams]="{ next: '/calendar' }">Sign in to edit</a>
         }
-      </ul>
+      </div>
+      <app-calendar-board [editable]="editable()" (sessionEnded)="signedOut()" />
+      <a class="text-link" routerLink="/book">Book</a>
     </section>
   `,
 })
-export class CalendarPage implements OnInit {
-  private readonly api = inject(ApiService);
-  readonly events = signal<CalendarEvent[]>([]);
+export class CalendarPage {
+  readonly editable = signal(hasDeskToken());
 
-  ngOnInit() {
-    this.api.publicEvents().subscribe((rows) => this.events.set(rows));
+  signedOut() {
+    this.editable.set(false);
   }
+}
+
+function hasDeskToken() {
+  return typeof sessionStorage !== 'undefined' && !!sessionStorage.getItem('ashliee_token');
 }

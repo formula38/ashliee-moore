@@ -41,12 +41,15 @@ export class FilmStrip {
   private drag: { x: number; left: number; id: number } | null = null;
   private dragged = false;
   private timer = 0;
-  private readonly reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  private readonly reduceMotion = typeof window !== 'undefined'
+    && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   constructor() {
     const destroyRef = inject(DestroyRef);
     afterNextRender(() => this.resume());
-    destroyRef.onDestroy(() => window.clearInterval(this.timer));
+    destroyRef.onDestroy(() => {
+      if (typeof window !== 'undefined') window.clearInterval(this.timer);
+    });
   }
 
   pad(index: number) {
@@ -105,6 +108,7 @@ export class FilmStrip {
   }
 
   pause() {
+    if (typeof window === 'undefined') return;
     window.clearInterval(this.timer);
   }
 

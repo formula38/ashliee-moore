@@ -1,14 +1,26 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, OnInit, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ApiService, InquiryPayload } from '../core/api.service';
+import { ApiService, InquiryPayload, Look } from '../core/api.service';
 import { Reveal } from '../shared/reveal';
+
+const PORTRAIT: Look = {
+  id: 0,
+  section: 'about',
+  src: '/media/about-02.jpg',
+  alt: 'Editorial portrait of Ashliee Moore surrounded by red roses',
+  caption: 'Roses',
+};
 
 @Component({
   selector: 'app-book',
   imports: [FormsModule, Reveal],
   template: `
-    <section class="section section--book" appReveal>
+    <section class="section spread section--book" appReveal>
       <div class="book">
+        <figure class="about__media book__portrait">
+          <img [src]="portrait().src" [alt]="portrait().alt" width="900" height="1200" />
+        </figure>
+        <div class="book__panel">
         <div class="book__intro">
           <p class="eyebrow">Book</p>
           <h1>Let’s build the next look, plate, or night.</h1>
@@ -76,12 +88,14 @@ import { Reveal } from '../shared/reveal';
           <p class="book__status" role="status" aria-live="polite" [attr.data-state]="statusState()">{{ status() }}</p>
           <p class="book__note">Saved on the desk. We reply by email.</p>
         </form>
+        </div>
       </div>
     </section>
   `,
 })
-export class BookPage {
+export class BookPage implements OnInit {
   private readonly api = inject(ApiService);
+  readonly portrait = signal(PORTRAIT);
   readonly sending = signal(false);
   readonly status = signal('');
   readonly statusState = signal('');
@@ -97,6 +111,15 @@ export class BookPage {
     message: '',
     gotcha: '',
   };
+
+  ngOnInit() {
+    this.api.looks('about').subscribe({
+      next: (rows) => {
+        if (rows[0]) this.portrait.set(rows[0]);
+      },
+      error: () => undefined,
+    });
+  }
 
   submit() {
     if (!this.form.name || !this.form.email || !this.form.message) {

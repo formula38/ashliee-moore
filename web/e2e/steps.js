@@ -2,10 +2,10 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const { Then, When } = require('@cucumber/cucumber');
 
-Then('the Angular app uses hash routing for {string}', function (path) {
+Then('the Angular app uses path routing for {string}', function (path) {
   const config = fs.readFileSync('src/app/app.config.ts', 'utf8');
   const routes = fs.readFileSync('src/app/app.routes.ts', 'utf8');
-  assert.match(config, /withHashLocation/);
+  assert.doesNotMatch(config, /withHashLocation/);
   assert.match(routes, new RegExp(`path: '${path}'`));
 });
 

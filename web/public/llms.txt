@@ -1,0 +1,24 @@
+# Ashliee Moore
+
+Sacramento model, culinary host, and event promoter.
+
+## Public pages
+
+- / — home
+- /runway — modeling and runway looks
+- /glam — beauty close-ups
+- /kitchen — culinary hosting
+- /scene — event promotion
+- /about — who she is
+- /book — request a booking
+- /calendar — public dates on a month, week, or day grid
+- /newsletter — Sacramento Fashion letter for the current month, built from public dates
+- /events — upcoming public events, with a flyer and RSVP when the desk added them
+- /events/{id} — one public event
+- /faq — short answers
+- /privacy — how booking inquiries are stored
+- /terms — a booking request is not a confirmed job
+
+## Not public
+
+Private calendar holds, desk notes, the rate card, and /admin are not for citation. A date appears on /events and in the letter only after an operator marks it publicly viewable. This file does not name a public host until one is set.

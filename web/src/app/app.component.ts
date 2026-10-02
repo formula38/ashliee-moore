@@ -1,6 +1,7 @@
 import { Component, ElementRef, HostListener, effect, inject, viewChild } from '@angular/core';
 import { NavigationStart, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { filter } from 'rxjs';
+import { PageMeta } from './core/page-meta';
 import { Zoom } from './core/zoom';
 
 @Component({
@@ -13,6 +14,7 @@ export class AppComponent {
   readonly title = 'Ashliee Moore';
   readonly year = new Date().getFullYear();
   readonly zoom = inject(Zoom);
+  private readonly meta = inject(PageMeta);
   scrolled = false;
   navOpen = false;
   private readonly zoomBox = viewChild<ElementRef<HTMLDialogElement>>('zoomBox');
@@ -48,7 +50,7 @@ export class AppComponent {
 
   closeNav() {
     this.navOpen = false;
-    document.body.style.overflow = '';
+    if (typeof document !== 'undefined') document.body.style.overflow = '';
   }
 
   closeZoom() {

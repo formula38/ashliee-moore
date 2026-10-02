@@ -12,6 +12,10 @@ spring:
       ddl-auto: validate
   flyway:
     enabled: true
+  servlet:
+    multipart:
+      max-file-size: 8MB
+      max-request-size: 8MB
 
 ashliee:
   jwt-secret: ${ASHLIEE_JWT_SECRET:dev-only-change-me-32-characters-min}

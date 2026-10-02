@@ -21,6 +21,12 @@ public class CalendarEvent {
     private String status;
     @Column(name = "is_public")
     private boolean publiclyViewable;
+    @Column(name = "flyer_src")
+    private String flyerSrc;
+    @Column(name = "rsvp_email")
+    private String rsvpEmail;
+    @Column(name = "event_url")
+    private String eventUrl;
 
     public Long getId() { return id; }
     public LocalDate getEventDate() { return eventDate; }
@@ -28,10 +34,16 @@ public class CalendarEvent {
     public String getNotes() { return notes; }
     public String getStatus() { return status; }
     public boolean isPubliclyViewable() { return publiclyViewable; }
+    public String getFlyerSrc() { return flyerSrc; }
+    public String getRsvpEmail() { return rsvpEmail; }
+    public String getEventUrl() { return eventUrl; }
 
     public void setEventDate(LocalDate eventDate) { this.eventDate = eventDate; }
     public void setTitle(String title) { this.title = title; }
     public void setNotes(String notes) { this.notes = notes; }
     public void setStatus(String status) { this.status = status; }
     public void setPubliclyViewable(boolean publiclyViewable) { this.publiclyViewable = publiclyViewable; }
+    public void setFlyerSrc(String flyerSrc) { this.flyerSrc = flyerSrc; }
+    public void setRsvpEmail(String rsvpEmail) { this.rsvpEmail = rsvpEmail; }
+    public void setEventUrl(String eventUrl) { this.eventUrl = eventUrl; }
 }

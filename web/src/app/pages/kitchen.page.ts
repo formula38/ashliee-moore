@@ -10,21 +10,22 @@ import { SlotReel } from '../shared/slot-reel';
   selector: 'app-kitchen',
   imports: [RouterLink, Reveal],
   template: `
-    <section class="section section--kitchen" appReveal>
-      <div class="kitchen">
-        <div class="kitchen__copy">
-          <p class="eyebrow">The Kitchen</p>
-          <h1>Hosting flavor. Serving the night.</h1>
-          <p>Culinary hosting and dining experiences across Sacramento — seafood boils, plated lobster, and nights that taste like an event.</p>
-          <a class="text-link" routerLink="/book">Book a culinary appearance →</a>
+    <section class="section spread section--kitchen" appReveal>
+      <div class="spread__split--even kitchen-spread">
+        <div>
+          <div class="section__intro kitchen__copy">
+            <p class="eyebrow">The Kitchen</p>
+            <h1>Hosting flavor. Serving the night.</h1>
+            <p>Culinary hosting and dining experiences across Sacramento — seafood boils, plated lobster, and nights that taste like an event.</p>
+            <a class="text-link" routerLink="/book">Book a culinary appearance</a>
+          </div>
+          @if (host(); as portrait) {
+            <figure class="kitchen__media">
+              <img [src]="portrait.src" [alt]="portrait.alt" (click)="zoom.open(portrait)" />
+            </figure>
+          }
         </div>
-        @if (host(); as portrait) {
-          <figure class="kitchen__media">
-            <img [src]="portrait.src" [alt]="portrait.alt" (click)="zoom.open(portrait)" />
-          </figure>
-        }
-      </div>
-      <div class="tasting" aria-label="Tasting menu" data-looks>
+        <div class="tasting" aria-label="Tasting menu" data-looks>
         @for (look of reel.slots(); track $index; let first = $first; let i = $index) {
           <figure [class.tasting__hero]="first">
             <img [class.is-swapping]="reel.swapping()" [src]="look.src" [alt]="look.alt" (click)="zoom.open(look)" />
@@ -32,6 +33,8 @@ import { SlotReel } from '../shared/slot-reel';
           </figure>
         }
       </div>
+      </div>
+      <a class="text-link" routerLink="/scene">The Scene</a>
     </section>
   `,
 })
@@ -46,10 +49,13 @@ export class KitchenPage implements OnInit {
     forkJoin({
       kitchen: this.api.looks('kitchen'),
       tasting: this.api.looks('tasting'),
-    }).subscribe(({ kitchen, tasting }) => {
-      const plates = tasting.length ? tasting : kitchen.slice(1);
-      this.host.set(kitchen[0] ?? null);
-      this.reel.load(plates, this.destroyRef);
+    }).subscribe({
+      next: ({ kitchen, tasting }) => {
+        const plates = tasting.length ? tasting : kitchen.slice(1);
+        this.host.set(kitchen[0] ?? null);
+        this.reel.load(plates, this.destroyRef);
+      },
+      error: () => undefined,
     });
   }
 

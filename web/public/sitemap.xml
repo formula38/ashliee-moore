@@ -1,14 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>http://localhost:4260/#/</loc></url>
-  <url><loc>http://localhost:4260/#/runway</loc></url>
-  <url><loc>http://localhost:4260/#/glam</loc></url>
-  <url><loc>http://localhost:4260/#/kitchen</loc></url>
-  <url><loc>http://localhost:4260/#/scene</loc></url>
-  <url><loc>http://localhost:4260/#/about</loc></url>
-  <url><loc>http://localhost:4260/#/book</loc></url>
-  <url><loc>http://localhost:4260/#/calendar</loc></url>
-  <url><loc>http://localhost:4260/#/privacy</loc></url>
-  <url><loc>http://localhost:4260/#/terms</loc></url>
-  <url><loc>http://localhost:4260/#/faq</loc></url>
+
 </urlset>
