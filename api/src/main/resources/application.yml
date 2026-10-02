@@ -1,0 +1,21 @@
+server:
+  port: 8095
+
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/ashliee
+    username: ${ASHLIEE_DB_USER:postgres}
+    password: ${ASHLIEE_DB_PASSWORD:postgres}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+
+ashliee:
+  jwt-secret: ${ASHLIEE_JWT_SECRET:dev-only-change-me-32-characters-min}
+  admin-username: ${ASHLIEE_ADMIN_USER:admin}
+  admin-password: ${ASHLIEE_ADMIN_PASSWORD:change-me}
+  cors-origins: ${ASHLIEE_CORS_ORIGINS:http://localhost:4260}
+  assets-dir: ${ASHLIEE_ASSETS_DIR:../assets}

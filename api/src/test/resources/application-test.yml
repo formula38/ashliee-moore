@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/ashliee_test
+
+ashliee:
+  jwt-secret: test-only-secret-must-be-long-enough-ok
+  admin-password: change-me
+  assets-dir: ../assets

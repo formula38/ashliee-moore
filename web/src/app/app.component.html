@@ -1,0 +1,44 @@
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" [class.is-scrolled]="scrolled">
+  <a class="logo" routerLink="/" (click)="closeNav()">Ashliee Moore</a>
+  <button
+    class="nav-toggle"
+    type="button"
+    [attr.aria-expanded]="navOpen"
+    aria-controls="site-nav"
+    (click)="toggleNav()"
+  >
+    <span class="nav-toggle__bars" aria-hidden="true"></span>
+    <span class="visually-hidden">Menu</span>
+  </button>
+  <nav class="site-nav" id="site-nav" [class.is-open]="navOpen">
+    <a routerLink="/runway" routerLinkActive="is-current" (click)="closeNav()">The Runway</a>
+    <a routerLink="/glam" routerLinkActive="is-current" (click)="closeNav()">The Glam</a>
+    <a routerLink="/kitchen" routerLinkActive="is-current" (click)="closeNav()">The Kitchen</a>
+    <a routerLink="/scene" routerLinkActive="is-current" (click)="closeNav()">The Scene</a>
+    <a routerLink="/about" routerLinkActive="is-current" (click)="closeNav()">About</a>
+    <a routerLink="/calendar" routerLinkActive="is-current" (click)="closeNav()">Calendar</a>
+    <a class="nav-cta" routerLink="/book" routerLinkActive="is-current" (click)="closeNav()">Book</a>
+  </nav>
+</header>
+<main id="main">
+  <router-outlet />
+</main>
+<footer class="site-footer">
+  <div class="site-footer__brand">
+    <p class="site-footer__name">Ashliee Moore</p>
+    <p>Sacramento · Model · Chef · Promoter</p>
+  </div>
+  <a href="https://www.instagram.com/ashliee007/" target="_blank" rel="noopener noreferrer">Instagram</a>
+  <a routerLink="/privacy">Privacy</a>
+  <a routerLink="/terms">Terms</a>
+  <a routerLink="/faq">FAQ</a>
+  <p class="site-footer__copy">© {{ year }} Ashliee Moore</p>
+</footer>
+<dialog class="zoom" #zoomBox aria-label="Enlarged photo" (click)="backdrop($event)" (close)="zoom.clear()">
+  <button class="zoom__close" type="button" aria-label="Close" (click)="closeZoom()">×</button>
+  @if (zoom.shot(); as shot) {
+    <img class="zoom__image" [src]="shot.src" [alt]="shot.alt" />
+    <p class="zoom__caption">{{ shot.caption }}</p>
+  }
+</dialog>

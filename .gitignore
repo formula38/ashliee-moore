@@ -1,0 +1,7 @@
+api/target/
+web/node_modules/
+web/dist/
+web/.angular/
+*.log
+.env
+application-local.yml
