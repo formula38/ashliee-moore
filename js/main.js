@@ -402,7 +402,7 @@
   if (form) {
     const status = form.querySelector("[data-form-status]");
     const submit = form.querySelector('button[type="submit"]');
-    const mailbox = "royaltymaxwin@gmail.com";
+    const mailbox = "triple8mediagroup@gmail.com";
 
     const setStatus = (text, state) => {
       if (!status) return;

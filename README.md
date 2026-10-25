@@ -38,7 +38,7 @@ Open `http://localhost:8080`.
 
 ## Booking form
 
-Posts through [FormSubmit](https://formsubmit.co) to `royaltymaxwin@gmail.com` until `hello@ashliee-moore.com` can be created on the branded domain. The first live submit to a new mailbox sends an activation email — confirm it or later inquiries will not arrive.
+Posts through [FormSubmit](https://formsubmit.co) to `triple8mediagroup@gmail.com`. The page still prints `royaltymaxwin@gmail.com`. The first live submit to a mailbox FormSubmit has not confirmed sends an activation email — confirm it or later inquiries will not arrive.
 
 ## Custom domain (later)
 
