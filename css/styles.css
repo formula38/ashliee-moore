@@ -879,6 +879,10 @@ main img {
   font-size: 0.85rem;
 }
 
+.site-footer__credit {
+  font-size: 0.85rem;
+}
+
 [data-reveal] {
   opacity: 0;
   transform: translateY(28px);
